@@ -1,10 +1,17 @@
+import NextLink from 'next/link'
 import {
   Box,
+  Button,
   Container,
   Heading,
   Image,
+  Link,
   useColorModeValue
 } from '@chakra-ui/react'
+import { BiosButton, BioSection, BioYear } from '../components/bio'
+import Section from '../components/section'
+import Paragraph from '../components/paragraph'
+import { ChevronRightIcon } from '@chakra-ui/icons'
 
 const Page = () => {
   return (
@@ -43,6 +50,41 @@ const Page = () => {
           />
         </Box>
       </Box>
+      <Section delay={0.1}>
+        <Heading as="h3" variant="section-title">
+          Work
+        </Heading>
+        <Paragraph>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+          architecto reprehenderit adipisci eligendi, nostrum eveniet, delectus
+          nulla veritatis vel quod vero sed facere odit voluptas.
+          <NextLink href="/works/#">
+            <Link>Work</Link>
+          </NextLink>
+          .
+        </Paragraph>
+        <Box align="center" my={4}>
+          <NextLink href="/works">
+            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+              My portfolio
+            </Button>
+          </NextLink>
+        </Box>
+      </Section>
+      <Section delay={0.2}>
+        <Heading as="h3" variant="section-title">
+          Bio
+        </Heading>
+        <BioSection>
+          <BioYear>1993</BioYear>
+          Born in Antalya, Turkey.
+        </BioSection>
+        <BioSection>
+          <BioYear>2010</BioYear>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
+          doloribus
+        </BioSection>
+      </Section>
     </Container>
   )
 }
