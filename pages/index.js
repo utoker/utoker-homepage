@@ -7,7 +7,6 @@ import {
   Image,
   Link,
   useColorModeValue,
-  SimpleGrid,
   List,
   ListItem,
   Icon
@@ -18,10 +17,10 @@ import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import Layout from '../components/layouts/article'
 import {
-  IoLogoTwitter,
-  IoLogoInstagram,
-  IoLogoGithub,
-  IoLogoDiscord
+  IoLogoGithub
+  // IoLogoTwitter,
+  // IoLogoInstagram,
+  // IoLogoDiscord
 } from 'react-icons/io5'
 
 const Page = () => {
