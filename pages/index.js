@@ -8,7 +8,7 @@ import {
   Link,
   useColorModeValue
 } from '@chakra-ui/react'
-import { BiosButton, BioSection, BioYear } from '../components/bio'
+import { BioSection, BioYear } from '../components/bio'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import { ChevronRightIcon } from '@chakra-ui/icons'
