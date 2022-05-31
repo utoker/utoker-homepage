@@ -6,13 +6,23 @@ import {
   Heading,
   Image,
   Link,
-  useColorModeValue
+  useColorModeValue,
+  SimpleGrid,
+  List,
+  ListItem,
+  Icon
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import { BioSection, BioYear } from '../components/bio'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import Layout from '../components/layouts/article'
+import {
+  IoLogoTwitter,
+  IoLogoInstagram,
+  IoLogoGithub,
+  IoLogoDiscord
+} from 'react-icons/io5'
 
 const Page = () => {
   return (
@@ -86,6 +96,24 @@ const Page = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
             doloribus
           </BioSection>
+        </Section>
+
+        <Section delay={0.3}>
+          <Heading as="h3" variant="section-title">
+            On the web
+          </Heading>
+          <List>
+            <ListItem></ListItem>
+            <Link href="https://github.com/utoker" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<Icon as={IoLogoGithub} />}
+              >
+                @utoker
+              </Button>
+            </Link>
+          </List>
         </Section>
       </Container>
     </Layout>
