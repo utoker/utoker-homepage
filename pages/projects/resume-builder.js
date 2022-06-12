@@ -8,7 +8,7 @@ const ResumeBuilder = () => (
   <Layout title="Resume Builder">
     <Container>
       <Title>
-        Resume Builder <Badge>2022</Badge>
+        Resume Builder <Badge>2021</Badge>
       </Title>
       <P>
         A React app which allows users to create their own resume and save it as
@@ -36,7 +36,7 @@ const ResumeBuilder = () => (
       </List>
       <ProjectImage
         src="/images/projects/resume-builder_01.png"
-        alt="Inkdrop"
+        alt="Resume Builder"
       />
     </Container>
   </Layout>

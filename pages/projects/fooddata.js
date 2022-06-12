@@ -8,7 +8,7 @@ const FoodDataApp = () => (
   <Layout title="FoodData App">
     <Container>
       <Title>
-        FoodData App <Badge>2021</Badge>
+        FoodData App <Badge>2022</Badge>
       </Title>
       <P>
         A website for getting nutrient profile data of requested food from USDA

@@ -3,11 +3,11 @@ import dynamic from 'next/dynamic'
 import NavBar from '../navbar'
 import { Box, Container } from '@chakra-ui/react'
 import Footer from '../footer'
-import VoxelDogLoader from '../voxel-dog-loader'
+import VoxelDeskLoader from '../voxel-desk-loader'
 
-const LazyVoxelDog = dynamic(() => import('../voxel-dog'), {
+const LazyVoxelDesk = dynamic(() => import('../voxel-desk'), {
   ssr: false,
-  loading: () => <VoxelDogLoader />
+  loading: () => <VoxelDeskLoader />
 })
 
 const Main = ({ children, router }) => {
@@ -22,14 +22,10 @@ const Main = ({ children, router }) => {
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <title>Umut Toker - Homepage</title>
       </Head>
-
       <NavBar path={router.asPath} />
-
       <Container maxW="container.md" pt={14}>
-        <LazyVoxelDog />
-
+        <LazyVoxelDesk />
         {children}
-
         <Footer />
       </Container>
     </Box>
