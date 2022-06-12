@@ -74,17 +74,11 @@ const Home = () => (
 
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
-          Work
+          About
         </Heading>
-        <Paragraph>
-          Umut is a freelance and a full-stack developer based in Long Island
-          with a passion for developing digital services.{' '}
-          {/* <NextLink href="/works/" passHref scroll={false}>
-            <Link></Link>
-          </NextLink> */}
-        </Paragraph>
+        <Paragraph>passion about developing... react.. etc</Paragraph>
         <Box align="center" my={4}>
-          <NextLink href="/works" passHref scroll={false}>
+          <NextLink href="/projects" passHref scroll={false}>
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
               My portfolio
             </Button>

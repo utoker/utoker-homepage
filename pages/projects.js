@@ -1,6 +1,6 @@
 import Layout from '../components/layouts/article'
 
-const Works = () => <Layout title="Works"></Layout>
+const Projects = () => <Layout title="Projects"></Layout>
 
-export default Works
+export default Projects
 export { getServerSideProps } from '../components/chakra'
