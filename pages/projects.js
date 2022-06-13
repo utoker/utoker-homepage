@@ -32,7 +32,7 @@ const Projects = () => (
           </ProjectGridItem>
         </Section>
 
-        <Section delay={0.2}>
+        <Section>
           <ProjectGridItem
             id={'resume-builder'}
             title={'Resume Builder'}
@@ -53,7 +53,7 @@ const Projects = () => (
           </ProjectGridItem>
         </Section>
 
-        <Section>
+        <Section delay={0.1}>
           <ProjectGridItem
             id={'memory-game'}
             title={'Memory Game'}
@@ -64,7 +64,7 @@ const Projects = () => (
           </ProjectGridItem>
         </Section>
 
-        <Section>
+        <Section delay={0.2}>
           <ProjectGridItem
             id={'food-order-app'}
             title={'Food Order App'}
@@ -74,7 +74,7 @@ const Projects = () => (
           </ProjectGridItem>
         </Section>
 
-        <Section delay={0.1}>
+        <Section delay={0.2}>
           <ProjectGridItem
             id={'todo-app'}
             title={'To Do App'}
@@ -85,7 +85,7 @@ const Projects = () => (
         </Section>
       </SimpleGrid>
 
-      <Section delay={0.1}>
+      <Section delay={0.3}>
         <Divider my={6} />
         <Heading as="h3" fontSize={20} mb={4}>
           Plain JavaScript Apps
@@ -93,7 +93,7 @@ const Projects = () => (
       </Section>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
-        <Section delay={0.2}>
+        <Section delay={0.3}>
           <ProjectGridItem
             id={'calculator'}
             title={'Calculator'}
@@ -103,7 +103,7 @@ const Projects = () => (
           </ProjectGridItem>
         </Section>
 
-        <Section delay={0.2}>
+        <Section delay={0.4}>
           <ProjectGridItem
             id={'tic-tac-toe'}
             title={'Tic Tac Toe'}
@@ -112,7 +112,7 @@ const Projects = () => (
             A mini tic tac toe game made with plain JavaScript.
           </ProjectGridItem>
         </Section>
-        <Section delay={0.3}>
+        <Section delay={0.4}>
           <ProjectGridItem
             id={'etch-a-sketch'}
             title={'Etch a Sketch'}
@@ -121,7 +121,7 @@ const Projects = () => (
             A drawing web app made with plain JavaScript.
           </ProjectGridItem>
         </Section>
-        <Section delay={0.3}>
+        <Section>
           <ProjectGridItem
             id={'shopping-list'}
             title={'Shopping List'}
