@@ -28,7 +28,7 @@ const FoodOrderApp = () => (
         </ListItem>
         <ListItem>
           <Meta>Built with</Meta>
-          <span>React.Js / CSS</span>
+          <span>React.JS / CSS</span>
         </ListItem>
       </List>
       <ProjectImage

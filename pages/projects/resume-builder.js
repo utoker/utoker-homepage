@@ -31,7 +31,7 @@ const ResumeBuilder = () => (
         </ListItem>
         <ListItem>
           <Meta>Built with</Meta>
-          <span>React.js / Material UI / UUID / ReactToPrint</span>
+          <span>React.JS / Material UI / UUID / ReactToPrint</span>
         </ListItem>
       </List>
       <ProjectImage

@@ -30,7 +30,7 @@ const FoodDataApp = () => (
         </ListItem>
         <ListItem>
           <Meta>Built with</Meta>
-          <span>Next.Js / Axios / Chakra UI / Vercel</span>
+          <span>Next.JS / Axios / Chakra UI / Vercel</span>
         </ListItem>
       </List>
       <ProjectImage

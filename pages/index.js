@@ -35,7 +35,7 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Hello, I&apos;m an indie app developer based in New York!
+        Hello, I&apos;m a web app developer based in New York!
       </Box>
 
       <Box display={{ md: 'flex' }}>
@@ -109,13 +109,7 @@ const Home = () => (
           I ♥
         </Heading>
         <Paragraph>
-          Art, Music,{' '}
-          <Link href="https://" target="_blank">
-            Drawing
-          </Link>
-          <Link href="https://" target="_blank">
-            Photography
-          </Link>
+          Art
         </Paragraph>
       </Section> */}
 

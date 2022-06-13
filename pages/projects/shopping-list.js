@@ -17,8 +17,8 @@ const ShoppingList = () => (
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Website</Meta>
-          <Link href="https://utoker.github.io/calculator/">
-            https://utoker.github.io/calculator/
+          <Link href="https://utoker.github.io/shopping-list/">
+            https://utoker.github.io/shopping-list/
             <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
