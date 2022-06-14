@@ -95,6 +95,11 @@ const Home = () => (
           Born in Antalya, Turkey.
         </BioSection>
         <BioSection>
+          <BioYear>2018</BioYear>
+          Graduated from Eskişehir Osmangazi University (Turkish State
+          University) with a bachelor&apos;s degree in business administration.
+        </BioSection>
+        <BioSection>
           <BioYear>2019</BioYear>
           Move to Long Island, New York.
         </BioSection>
