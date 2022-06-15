@@ -88,7 +88,7 @@ const Projects = () => (
       <Section delay={0.3}>
         <Divider my={6} />
         <Heading as="h3" fontSize={20} mb={4}>
-          Plain JavaScript Apps
+          Vanilla JavaScript Apps
         </Heading>
       </Section>
 
@@ -99,7 +99,7 @@ const Projects = () => (
             title={'Calculator'}
             thumbnail={thumbCalculator}
           >
-            A calculator web app made with plain JavaScript.
+            A calculator web app made with vanilla JavaScript.
           </ProjectGridItem>
         </Section>
 
@@ -109,7 +109,7 @@ const Projects = () => (
             title={'Tic Tac Toe'}
             thumbnail={thumbTicTocToe}
           >
-            A mini tic tac toe game made with plain JavaScript.
+            A mini tic tac toe game made with vanilla JavaScript.
           </ProjectGridItem>
         </Section>
         <Section delay={0.4}>
@@ -118,7 +118,7 @@ const Projects = () => (
             title={'Etch a Sketch'}
             thumbnail={thumbEtchASketch}
           >
-            A drawing web app made with plain JavaScript.
+            A drawing web app made with vanilla JavaScript.
           </ProjectGridItem>
         </Section>
         <Section>
@@ -127,7 +127,7 @@ const Projects = () => (
             title={'Shopping List'}
             thumbnail={thumbShoppingList}
           >
-            A shopping list app made with plain JavaScript. It is my first
+            A shopping list app made with vanilla JavaScript. It is my first
             project using JS.
           </ProjectGridItem>
         </Section>

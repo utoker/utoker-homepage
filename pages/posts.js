@@ -13,7 +13,7 @@ const Posts = () => (
       <Section>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
-            title="Scalable React-Redux Template With TypeScript Environment.
+            title="Scalable React-Redux Boilerplate With TypeScript Environment.
 "
             thumbnail={thumbReduxTs}
             href="https://github.com/utoker/redux-ts"
