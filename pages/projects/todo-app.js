@@ -28,7 +28,7 @@ const TodoApp = () => (
         </ListItem>
         <ListItem>
           <Meta>Built with</Meta>
-          <span>React.JS / TypeScript / Next.JS</span>
+          <span>React / TypeScript / Next.js</span>
         </ListItem>
       </List>
       <ProjectImage

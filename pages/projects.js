@@ -59,8 +59,8 @@ const Projects = () => (
             title={'Memory Game'}
             thumbnail={thumbMemoryGame}
           >
-            A mini game made with React JS. To score points you need to pick a
-            card that you have not picked before.
+            A mini game made with React. To score points you need to pick a card
+            that you have not picked before.
           </ProjectGridItem>
         </Section>
 

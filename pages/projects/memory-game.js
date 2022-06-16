@@ -31,7 +31,7 @@ const MemoryGame = () => (
         </ListItem>
         <ListItem>
           <Meta>Built with</Meta>
-          <span>React.JS / Material UI</span>
+          <span>React / Material UI</span>
         </ListItem>
       </List>
       <ProjectImage

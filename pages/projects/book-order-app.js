@@ -28,7 +28,7 @@ const BookOrderApp = () => (
         </ListItem>
         <ListItem>
           <Meta>Built with</Meta>
-          <span>React.JS / CSS</span>
+          <span>React / CSS</span>
         </ListItem>
       </List>
       <ProjectImage
