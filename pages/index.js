@@ -76,7 +76,10 @@ const Home = () => (
         <Heading as="h3" variant="section-title">
           About
         </Heading>
-        <Paragraph>passion about developing... react.. etc</Paragraph>
+        <Paragraph>
+          I specialize in JavaScript and have experience working with TypeScript
+          and React. I also have experience working with Node, Next, and Nest.
+        </Paragraph>
         <Box align="center" my={4}>
           <NextLink href="/projects" passHref scroll={false}>
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
