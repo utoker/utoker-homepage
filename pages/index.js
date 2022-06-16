@@ -78,7 +78,7 @@ const Home = () => (
         </Heading>
         <Paragraph>
           I specialize in JavaScript and have experience working with TypeScript
-          and React. I also have experience working with Node, Next, and Nest.
+          and React. I also have experience working with Next.JS.
         </Paragraph>
         <Box align="center" my={4}>
           <NextLink href="/projects" passHref scroll={false}>
