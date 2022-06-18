@@ -93,10 +93,10 @@ const Home = () => (
         <Heading as="h3" variant="section-title">
           Bio
         </Heading>
-        <BioSection>
+        {/* <BioSection>
           <BioYear>1993</BioYear>
           Born in Antalya, Turkey.
-        </BioSection>
+        </BioSection> */}
         <BioSection>
           <BioYear>2018</BioYear>
           Graduated from Eskişehir Osmangazi University (Turkish State
