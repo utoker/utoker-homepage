@@ -10,10 +10,7 @@ const ShoppingList = () => (
       <Title>
         Shopping List <Badge>2021</Badge>
       </Title>
-      <P>
-        A shopping list app made with plain JavaScript. It is my first project
-        using JS.
-      </P>
+      <P>A shopping list app made with plain JavaScript.</P>
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Website</Meta>

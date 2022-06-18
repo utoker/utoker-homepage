@@ -1,4 +1,4 @@
-import { Container, Divider, Heading, SimpleGrid } from '@chakra-ui/react'
+import { Container, Divider, Heading, Link, SimpleGrid } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { ProjectGridItem } from '../components/grid-item'
@@ -6,6 +6,7 @@ import { ProjectGridItem } from '../components/grid-item'
 import thumbFoodOrderApp from '../public/images/projects/food-order-app_eyecatch.png'
 import thumbBookOrderApp from '../public/images/projects/book-order-app_eyecatch.png'
 import thumbFoodDataApp from '../public/images/projects/fooddata-app_eyecatch.png'
+import thumbSearchNpm from '../public/images/projects/search-npm_eyecatch.png'
 import thumbToDoApp from '../public/images/projects/todo-app_eyecatch.png'
 import thumbResumeBuilder from '../public/images/projects/resume-builder_eyecatch.png'
 import thumbMemoryGame from '../public/images/projects/memory-game_eyecatch.png'
@@ -29,6 +30,20 @@ const Projects = () => (
           >
             A website for getting nutrient profile data of requested food from
             USDA Food Database with API.
+          </ProjectGridItem>
+        </Section>
+
+        <Section>
+          <ProjectGridItem
+            id={'search-npm'}
+            title={'Search NPM'}
+            thumbnail={thumbSearchNpm}
+          >
+            A web app for searching node packages with the implementation of{' '}
+            <Link href="https://npms.io/" target="_blank">
+              npms.io
+            </Link>{' '}
+            API.
           </ProjectGridItem>
         </Section>
 
@@ -127,8 +142,7 @@ const Projects = () => (
             title={'Shopping List'}
             thumbnail={thumbShoppingList}
           >
-            A shopping list app made with vanilla JavaScript. It is my first
-            project using JS.
+            A shopping list app made with vanilla JavaScript.
           </ProjectGridItem>
         </Section>
       </SimpleGrid>

@@ -106,10 +106,10 @@ const Home = () => (
           <BioYear>2019</BioYear>
           Move to Long Island, New York.
         </BioSection>
-        <BioSection>
+        {/* <BioSection>
           <BioYear>2021 to present</BioYear>
           Learning programming.
-        </BioSection>
+        </BioSection> */}
       </Section>
 
       {/* <Section delay={0.3}>
