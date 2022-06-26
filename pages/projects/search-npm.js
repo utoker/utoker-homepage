@@ -1,6 +1,6 @@
 import { Container, Badge, Link, List, ListItem } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { Title, Meta } from '../../components/project'
+import { Title, Meta, ProjectImage } from '../../components/project'
 import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
@@ -25,14 +25,14 @@ const SearchNpm = () => (
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Website</Meta>
-          <Link href="https://food-data-app.vercel.app/">
-            https://food-data-app.vercel.app/ <ExternalLinkIcon mx="2px" />
+          <Link href="https://search-npm.vercel.app">
+            https://search-npm.vercel.app <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>
           <Meta>Source</Meta>
-          <Link href="https://github.com/utoker/FoodData-App">
-            https://github.com/utoker/FoodData-App
+          <Link href="https://github.com/utoker/search-npm">
+            https://github.com/utoker/search-npm
             <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
@@ -41,18 +41,14 @@ const SearchNpm = () => (
           <span>Next.js / TypeScript / Chakra UI / Axios </span>
         </ListItem>
       </List>
-      {/* <ProjectImage
-        src="/images/projects/fooddata-app_01.png"
-        alt="FoodData App"
-      /> */}
-      {/* <ProjectImage
-        src="/images/projects/fooddata-app_02.png"
-        alt="FoodData App"
+      <ProjectImage
+        src="/images/projects/npm-search_01.png"
+        alt="Reqq Link Shortener"
       />
       <ProjectImage
-        src="/images/projects/fooddata-app_03.png"
-        alt="FoodData App"
-      /> */}
+        src="/images/projects/npm-search_02.png"
+        alt="Reqq Link Shortener"
+      />
     </Container>
   </Layout>
 )

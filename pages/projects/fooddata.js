@@ -11,8 +11,11 @@ const FoodDataApp = () => (
         FoodData App <Badge>2022</Badge>
       </Title>
       <P>
-        A website for getting nutrient profile data of requested food from USDA
-        Food Database with API.
+        A website for getting nutrient profile data of requested food from{' '}
+        <Link href="https://fdc.nal.usda.gov/" target="_blank">
+          USDA Food Database
+        </Link>{' '}
+        with API.
       </P>
       <List ml={4} my={4}>
         <ListItem>
