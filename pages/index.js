@@ -4,7 +4,6 @@ import {
   Container,
   Heading,
   Box,
-  // SimpleGrid,
   Button,
   List,
   ListItem,
@@ -16,7 +15,6 @@ import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-// import { GridItem } from '../components/grid-item'
 import { IoLogoLinkedin, IoMail, IoLogoGithub } from 'react-icons/io5'
 import Image from 'next/image'
 
@@ -37,7 +35,6 @@ const Home = () => (
       >
         Hello, I&apos;m a web app developer based in New York!
       </Box>
-
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
@@ -62,7 +59,7 @@ const Home = () => (
             overflow="hidden"
           >
             <ProfileImage
-              src="/images/toker.jpg"
+              src="/images/toker.png"
               alt="Profile image"
               borderRadius="full"
               width="100%"
@@ -71,7 +68,6 @@ const Home = () => (
           </Box>
         </Box>
       </Box>
-
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
           About
@@ -88,13 +84,12 @@ const Home = () => (
           </NextLink>
         </Box>
       </Section>
-
       <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
           Bio
         </Heading>
         {/* <BioSection>
-          <BioYear>1993</BioYear>
+          <BioYear>1</BioYear>
           Born in Antalya, Turkey.
         </BioSection> */}
         <BioSection>
@@ -106,21 +101,7 @@ const Home = () => (
           <BioYear>2019</BioYear>
           Move to Long Island, New York.
         </BioSection>
-        {/* <BioSection>
-          <BioYear>2021 to present</BioYear>
-          Learning programming.
-        </BioSection> */}
       </Section>
-
-      {/* <Section delay={0.3}>
-        <Heading as="h3" variant="section-title">
-          I ♥
-        </Heading>
-        <Paragraph>
-          Art
-        </Paragraph>
-      </Section> */}
-
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
           On the web
@@ -156,31 +137,6 @@ const Home = () => (
             </Link>
           </ListItem>
         </List>
-
-        {/* <SimpleGrid columns={[1, 2, 2]} gap={6}>
-          <GridItem
-            href="https://www.youtube.com/"
-            title=""
-            thumbnail={}
-          >
-            My YouTube channel (&gt;100k subs)
-          </GridItem>
-          <GridItem
-            href=""
-            title=""
-            thumbnail={}
-          >
-            A Markdown note-taking app
-          </GridItem>
-        </SimpleGrid> */}
-
-        {/* <Box align="center" my={4}>
-          <NextLink href="/posts" passHref scroll={false}>
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              Posts
-            </Button>
-          </NextLink>
-        </Box> */}
       </Section>
     </Container>
   </Layout>
