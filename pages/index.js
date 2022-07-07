@@ -8,15 +8,19 @@ import {
   List,
   ListItem,
   useColorModeValue,
-  chakra
+  chakra,
+  SimpleGrid
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
-import { BioSection, BioYear } from '../components/bio'
+// import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { IoLogoLinkedin, IoMail, IoLogoGithub } from 'react-icons/io5'
 import Image from 'next/image'
+import { ProjectGridItem } from '../components/grid-item'
+import thumbLinkShortener from '../public/images/projects/link-shortener_eyecatch.png'
+import thumbFoodDataApp from '../public/images/projects/fooddata-app_eyecatch.png'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
@@ -85,13 +89,35 @@ const Home = () => (
         </Box>
       </Section>
       <Section delay={0.2}>
+        <Heading as="h3" fontSize={20} mb={4}>
+          Some Projects
+        </Heading>
+        <SimpleGrid columns={[1, 2, 2]} gap={6}>
+          <ProjectGridItem
+            id="link-shortener"
+            title="Reqq Link Shortener"
+            thumbnail={thumbLinkShortener}
+          >
+            A link shortening service that includes custom short URLs.
+          </ProjectGridItem>
+          <ProjectGridItem
+            id="fooddata"
+            title="FoodData App"
+            thumbnail={thumbFoodDataApp}
+          >
+            A website for getting nutrient profile data of requested food from
+            USDA Food Database with API.
+          </ProjectGridItem>
+        </SimpleGrid>
+      </Section>
+      {/* <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
           Bio
         </Heading>
-        {/* <BioSection>
+        <BioSection>
           <BioYear>1</BioYear>
           Born in Antalya, Turkey.
-        </BioSection> */}
+        </BioSection>
         <BioSection>
           <BioYear>2018</BioYear>
           Graduated from Eskişehir Osmangazi University (Turkish State
@@ -101,7 +127,7 @@ const Home = () => (
           <BioYear>2019</BioYear>
           Move to Long Island, New York.
         </BioSection>
-      </Section>
+      </Section> */}
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
           On the web
