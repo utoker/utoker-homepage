@@ -134,7 +134,11 @@ const Home = () => (
         </Heading>
         <List>
           <ListItem>
-            <Link href="https://github.com/utoker" target="_blank">
+            <Link
+              href="https://github.com/utoker"
+              rel="noopener noreferrer"
+              isExternal
+            >
               <Button
                 variant="ghost"
                 colorScheme="teal"
@@ -145,7 +149,11 @@ const Home = () => (
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://linkedin.com/in/utoker/" target="_blank">
+            <Link
+              href="https://linkedin.com/in/utoker/"
+              rel="noopener noreferrer"
+              isExternal
+            >
               <Button
                 variant="ghost"
                 colorScheme="teal"
@@ -156,7 +164,11 @@ const Home = () => (
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="mailto:utoker@gmail.com" target="_blank">
+            <Link
+              href="mailto:utoker@gmail.com"
+              rel="noopener noreferrer"
+              isExternal
+            >
               <Button variant="ghost" colorScheme="teal" leftIcon={<IoMail />}>
                 utoker@gmail.com
               </Button>
