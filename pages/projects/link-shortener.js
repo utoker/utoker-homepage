@@ -28,7 +28,7 @@ const FoodOrderApp = () => (
         </ListItem>
         <ListItem>
           <Meta>Built with</Meta>
-          <span>Next.js / Prisma / PlanetScale/ tRPC / Chakra UI</span>
+          <span>React Next.js / Prisma / PlanetScale / tRPC / Chakra UI</span>
         </ListItem>
       </List>
       <ProjectImage
