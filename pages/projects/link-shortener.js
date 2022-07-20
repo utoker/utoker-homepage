@@ -10,7 +10,10 @@ const FoodOrderApp = () => (
       <Title>
         Reqq Link Shortener <Badge>2021</Badge>
       </Title>
-      <P>A link shortening service that includes custom short URLs.</P>
+      <P>
+        An easy-to-use link shortening service with an option to use custom
+        URLs.
+      </P>
       <P>
         I did this project Because I did not want to pay for a basic forwarding
         service like bit.ly or tinyurl.com as a software developer.
@@ -32,7 +35,7 @@ const FoodOrderApp = () => (
         </ListItem>
         <ListItem>
           <Meta>Built with</Meta>
-          <span>React Next.js / Prisma / PlanetScale / tRPC / Chakra UI</span>
+          <span>React / Next.js / Prisma / PlanetScale / tRPC / ChakraUI</span>
         </ListItem>
       </List>
       <ProjectImage
