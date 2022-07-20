@@ -15,8 +15,8 @@ const SearchNpm = () => (
         <Link href="https://npms.io/" target="_blank">
           npms.io
         </Link>{' '}
-        Rest API. More information about npmsearch.com and their API can be
-        found at their{' '}
+        Rest API. More information about npm search and its API can be found at
+        their{' '}
         <Link href="https://github.com/npms-io" target="_blank">
           GitHub
         </Link>{' '}
