@@ -15,8 +15,8 @@ const FoodOrderApp = () => (
         URLs.
       </P>
       <P>
-        I did this project Because I did not want to pay for a basic forwarding
-        service like bit.ly or tinyurl.com as a software developer.
+        I did this project as a free alternative to paid services like bit.ly or
+        tinyurl.com.
       </P>
       <List ml={4} my={4}>
         <ListItem>
