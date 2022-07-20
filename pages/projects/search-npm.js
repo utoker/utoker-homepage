@@ -22,6 +22,10 @@ const SearchNpm = () => (
         </Link>{' '}
         repository.
       </P>
+      <P>
+        I did this project to learn how to use React-Redux in a TypeScript
+        environment and use it as a boilerplate for my following projects.
+      </P>
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Website</Meta>

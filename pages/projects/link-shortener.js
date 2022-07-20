@@ -11,6 +11,10 @@ const FoodOrderApp = () => (
         Reqq Link Shortener <Badge>2021</Badge>
       </Title>
       <P>A link shortening service that includes custom short URLs.</P>
+      <P>
+        I did this project Because I did not want to pay for a basic forwarding
+        service like bit.ly or tinyurl.com as a software developer.
+      </P>
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Website</Meta>

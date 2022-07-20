@@ -15,7 +15,11 @@ const FoodDataApp = () => (
         <Link href="https://fdc.nal.usda.gov/" target="_blank">
           USDA Food Database
         </Link>{' '}
-        with API.
+        with Rest API.
+      </P>
+      <P>
+        I did this project to look up a food&apos;s nutrients in seconds without
+        having to google it.
       </P>
       <List ml={4} my={4}>
         <ListItem>
