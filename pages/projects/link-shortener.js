@@ -11,12 +11,12 @@ const FoodOrderApp = () => (
         Reqq Link Shortener <Badge>2021</Badge>
       </Title>
       <P>
-        An easy-to-use link shortening service with an option to use custom
-        URLs.
+        The reqq.cc is an easy-to-use link shortening service with an option to
+        use custom URLs.
       </P>
       <P>
-        I did this project as a free alternative to paid services like bit.ly or
-        tinyurl.com.
+        I developed this web application as a free alternative to paid services
+        like bit.ly or tinyurl.com.
       </P>
       <List ml={4} my={4}>
         <ListItem>

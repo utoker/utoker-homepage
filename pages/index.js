@@ -98,15 +98,17 @@ const Home = () => (
             title="Reqq Link Shortener"
             thumbnail={thumbLinkShortener}
           >
-            A link shortening service that includes custom short URLs.
+            The reqq.cc is an easy-to-use link shortening service with an option
+            to use custom URLs.
           </ProjectGridItem>
           <ProjectGridItem
             id="fooddata"
             title="FoodData App"
             thumbnail={thumbFoodDataApp}
           >
-            A website for getting nutrient profile data of requested food from
-            USDA Food Database with API.
+            FoodData App is a web app for getting nutrient profile data of
+            requested food from the United States Department of
+            Agriculture&apos;s Food Database with Rest API.
           </ProjectGridItem>
         </SimpleGrid>
       </Section>
