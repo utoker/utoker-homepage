@@ -6,7 +6,7 @@ import {
 import Section from './section'
 import { ProjectGridItem } from './grid-item'
 
-export const ReactNaviteProjects = () => {
+export const ReactNativeProjects = () => {
   return reactNativeProjects.map(project => (
     <Section key={project.id} delay={project.delay}>
       <ProjectGridItem

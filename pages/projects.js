@@ -11,13 +11,12 @@ const Projects = () => {
   return (
     <Layout title="Projects">
       <Container>
-        {/* <Heading as="h3" fontSize={20} mb={4}>
+        <Heading as="h3" fontSize={20} mb={4}>
           React Native Apps
         </Heading>
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
-          <VanillaJsProjects /> 
-           <ReactNativeProjects />
-        </SimpleGrid> */}
+          <ReactNativeProjects />
+        </SimpleGrid>
 
         <Heading as="h3" fontSize={20} mb={4}>
           React Projects
