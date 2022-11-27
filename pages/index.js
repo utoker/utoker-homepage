@@ -20,7 +20,7 @@ import { IoLogoLinkedin, IoMail, IoLogoGithub } from 'react-icons/io5'
 import Image from 'next/image'
 import { ProjectGridItem } from '../components/grid-item'
 import thumbLinkShortener from '../public/images/projects/link-shortener_eyecatch.png'
-import thumbFoodDataApp from '../public/images/projects/fooddata-app_eyecatch.png'
+import thumbFoodData from '../public/images/projects/fooddata_eyecatch.png'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
@@ -102,11 +102,11 @@ const Home = () => (
             to use custom URLs.
           </ProjectGridItem>
           <ProjectGridItem
-            id="fooddata"
-            title="FoodData App"
-            thumbnail={thumbFoodDataApp}
+            id="food-data"
+            title="Food Data"
+            thumbnail={thumbFoodData}
           >
-            FoodData App is a web app for getting nutrient profile data of
+            Food Data is a web app for getting nutrient profile data of
             requested food from the United States Department of
             Agriculture&apos;s Food Database with Rest API.
           </ProjectGridItem>

@@ -35,9 +35,10 @@ const FoodOrderApp = () => (
         </ListItem>
         <ListItem>
           <Meta>Built with</Meta>
-          <span>React / Next.js / Prisma / PlanetScale / tRPC / ChakraUI</span>
+          <span>React / TypeScript / Next.js / MySQL</span>
         </ListItem>
       </List>
+      <ProjectImage src="/images/projects/reqq.gif" alt="Reqq Link Shortener" />
       <ProjectImage
         src="/images/projects/link-shortener_01.png"
         alt="Reqq Link Shortener"
