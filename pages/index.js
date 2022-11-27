@@ -20,7 +20,7 @@ import { IoLogoLinkedin, IoMail, IoLogoGithub } from 'react-icons/io5'
 import Image from 'next/image'
 import { ProjectGridItem } from '../components/grid-item'
 import thumbLinkShortener from '../public/images/projects/link-shortener_eyecatch.png'
-import thumbFoodData from '../public/images/projects/fooddata_eyecatch.png'
+import thumbFoodCheck from '../public/images/projects/food-check_eyecatch.png'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
@@ -94,21 +94,20 @@ const Home = () => (
         </Heading>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <ProjectGridItem
+            id="food-check"
+            title="Food Check"
+            thumbnail={thumbFoodCheck}
+          >
+            Food Check is a simple barcode grocery scanner that lets you quickly
+            discover a food&apos;s ingredients.
+          </ProjectGridItem>
+          <ProjectGridItem
             id="link-shortener"
             title="Reqq Link Shortener"
             thumbnail={thumbLinkShortener}
           >
             The reqq.cc is an easy-to-use link shortening service with an option
             to use custom URLs.
-          </ProjectGridItem>
-          <ProjectGridItem
-            id="food-data"
-            title="Food Data"
-            thumbnail={thumbFoodData}
-          >
-            Food Data is a web app for getting nutrient profile data of
-            requested food from the United States Department of
-            Agriculture&apos;s Food Database with Rest API.
           </ProjectGridItem>
         </SimpleGrid>
       </Section>
