@@ -44,7 +44,7 @@ const Home = () => (
           <Heading as="h2" variant="page-title">
             Umut Toker
           </Heading>
-          <p>Developer</p>
+          <p>Software Developer</p>
         </Box>
         <Box
           flexShrink={0}
