@@ -20,7 +20,7 @@ import { IoLogoLinkedin, IoMail, IoLogoGithub } from 'react-icons/io5'
 import Image from 'next/image'
 import { ProjectGridItem } from '../components/grid-item'
 import thumbLinkShortener from '../public/images/projects/link-shortener_eyecatch.png'
-import thumbFoodCheck from '../public/images/projects/food-check_eyecatch.png'
+import thumbAlbertSolver from '../public/images/projects/albert-solver_eyecatch.png'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
@@ -37,7 +37,7 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Hello, I&apos;m a web app developer based in New York!
+        Hello, I&apos;m a web developer based in New York!
       </Box>
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
@@ -90,16 +90,17 @@ const Home = () => (
       </Section>
       <Section delay={0.2}>
         <Heading as="h3" fontSize={20} mb={4}>
-          Some Projects
+          Latest Projects
         </Heading>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <ProjectGridItem
-            id="food-check"
-            title="Food Check"
-            thumbnail={thumbFoodCheck}
+            id="albert-solver"
+            title="Albert Solver"
+            thumbnail={thumbAlbertSolver}
           >
-            Food Check is a simple barcode grocery scanner that lets you quickly
-            discover a food&apos;s ingredients.
+            This project provides an assistance with essays and homework using
+            cutting-edge AI technology, powered by OpenAI&apos;s GPT-3 language
+            model.
           </ProjectGridItem>
           <ProjectGridItem
             id="link-shortener"
