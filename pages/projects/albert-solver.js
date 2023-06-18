@@ -5,10 +5,10 @@ import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
 const FoodOrderApp = () => (
-  <Layout title="Reqq Link Shortener">
+  <Layout title="Albert Solver">
     <Container>
       <Title>
-        Reqq Link Shortener <Badge>2023</Badge>
+        Albert Solver <Badge>2023</Badge>
       </Title>
       <P>
         This project aims to provide a comprehensive solution for expert

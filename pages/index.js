@@ -13,7 +13,6 @@ import {
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
-// import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { IoLogoLinkedin, IoMail, IoLogoGithub } from 'react-icons/io5'
@@ -21,6 +20,7 @@ import Image from 'next/image'
 import { ProjectGridItem } from '../components/grid-item'
 import thumbLinkShortener from '../public/images/projects/link-shortener_eyecatch.png'
 import thumbAlbertSolver from '../public/images/projects/albert-solver_eyecatch.png'
+import BioGroup from '../components/bioGroup'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
@@ -44,7 +44,7 @@ const Home = () => (
           <Heading as="h2" variant="page-title">
             Umut Toker
           </Heading>
-          <p>Software Developer</p>
+          <p>Software Engineer</p>
         </Box>
         <Box
           flexShrink={0}
@@ -112,24 +112,9 @@ const Home = () => (
           </ProjectGridItem>
         </SimpleGrid>
       </Section>
-      {/* <Section delay={0.2}>
-        <Heading as="h3" variant="section-title">
-          Bio
-        </Heading>
-        <BioSection>
-          <BioYear>1</BioYear>
-          Born in Antalya, Turkey.
-        </BioSection>
-        <BioSection>
-          <BioYear>2018</BioYear>
-          Graduated from Eskişehir Osmangazi University (Turkish State
-          University) with a bachelor&apos;s degree in business administration.
-        </BioSection>
-        <BioSection>
-          <BioYear>2019</BioYear>
-          Move to Long Island, New York.
-        </BioSection>
-      </Section> */}
+      <Section delay={0.2}>
+      <BioGroup />
+      </Section>
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
           On the web
