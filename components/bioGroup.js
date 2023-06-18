@@ -1,5 +1,5 @@
 import React from 'react'
-import { Heading } from '@chakra-ui/react'
+import { Heading, Link } from '@chakra-ui/react'
 import { BioSection, BioYear } from './bio'
 
 const BioGroup = () => {
@@ -11,23 +11,51 @@ const BioGroup = () => {
 
     <BioSection>  
       <BioYear>2018</BioYear>
-      Obtained bachelor&apos;s degree in business administration.
+      Obtained bachelor&apos;s degree in business administration
     </BioSection>
     <BioSection>
       <BioYear>2019</BioYear>
       Moved to New York.
     </BioSection>
     <BioSection>
-      <BioYear>2021</BioYear>
-      Built reqq.com
+      <BioYear>2022</BioYear>
+      Earned <Link
+              href="https://www.freecodecamp.org/certification/utoker/javascript-algorithms-and-data-structures"
+              rel="noopener noreferrer"
+              isExternal
+            >JavaScript Algorithms & Data Structures certification</Link>
+    </BioSection>
+    <BioSection>
+      <BioYear>2022</BioYear>
+      Built <Link
+              href="https://www.reqq.cc/"
+              rel="noopener noreferrer"
+              isExternal
+            >reqq.com</Link>
     </BioSection>
     <BioSection>
       <BioYear>2023</BioYear>
-      Built albertsolver.com
+      Achieved <Link
+              href="https://www.freecodecamp.org/certification/utoker/scientific-computing-with-python-v7"
+              rel="noopener noreferrer"
+              isExternal
+            > Scientific Computing with Python certification</Link>
     </BioSection>
     <BioSection>
       <BioYear>2023</BioYear>
-      Start working at The City Tutors.
+      Built <Link
+              href="https://www.albertsolver.com/"
+              rel="noopener noreferrer"
+              isExternal
+            >albertsolver.com</Link>
+    </BioSection>
+    <BioSection>
+      <BioYear>2023</BioYear>
+      Started working at <Link
+              href="https://www.thecitytutors.org/"
+              rel="noopener noreferrer"
+              isExternal
+            >The City Tutors</Link>
     </BioSection>
     <BioSection>
       <BioYear>2023</BioYear>
