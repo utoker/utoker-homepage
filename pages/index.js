@@ -78,7 +78,7 @@ const Home = () => (
         </Heading>
         <Paragraph>
           I have a passion for building web applications and I love to learn new
-          technologies. I like climbing and hiking other then coding.
+          technologies. I like climbing and hiking other than coding.
         </Paragraph>
         <Box align="center" my={4}>
           <NextLink href="/projects" passHref scroll={false}>
