@@ -4,122 +4,105 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import { loadGLTFModel } from '../lib/model'
 import { DeskSpinner, DeskContainer } from './voxel-desk-loader'
 
-function easeOutCirc(x) {
-  return Math.sqrt(1 - Math.pow(x - 1, 4))
-}
-
 const VoxelDesk = () => {
   const refContainer = useRef()
   const [loading, setLoading] = useState(true)
-  const [renderer, setRenderer] = useState()
-  const [_camera, setCamera] = useState()
-  const [target] = useState(new THREE.Vector3(-0.5, 1.2, 0))
-  const [initialCameraPosition] = useState(
-    new THREE.Vector3(
-      20 * Math.sin(0.2 * Math.PI),
-      10,
-      20 * Math.cos(0.2 * Math.PI)
-    )
+
+  const rendererRef = useRef(null)
+  const cameraRef = useRef(null)
+  const controlsRef = useRef(null)
+  const scene = useRef(new THREE.Scene())
+  const target = useRef(new THREE.Vector3(-0.5, 1.2, 0))
+  const initialCameraPosition = useRef(
+    new THREE.Vector3(20 * Math.sin(0.2 * Math.PI), 10, 20 * Math.cos(0.2 * Math.PI))
   )
-  const [scene] = useState(new THREE.Scene())
-  const [_controls, setControls] = useState()
 
   const handleWindowResize = useCallback(() => {
-    const { current: container } = refContainer
-    if (container && renderer) {
-      const scW = container.clientWidth
-      const scH = container.clientHeight
-
-      renderer.setSize(scW, scH)
+    if (refContainer.current && rendererRef.current) {
+      const scW = refContainer.current.clientWidth
+      const scH = refContainer.current.clientHeight
+      rendererRef.current.setSize(scW, scH)
     }
-  }, [renderer])
+  }, [])
 
-  /* eslint-disable react-hooks/exhaustive-deps */
   useEffect(() => {
     const { current: container } = refContainer
-    if (container && !renderer) {
+    if (container && !rendererRef.current) {
       const scW = container.clientWidth
       const scH = container.clientHeight
 
-      const renderer = new THREE.WebGLRenderer({
-        antialias: true,
-        alpha: true
-      })
-      renderer.setPixelRatio(window.devicePixelRatio)
-      renderer.setSize(scW, scH)
-      renderer.outputEncoding = THREE.sRGBEncoding
-      container.appendChild(renderer.domElement)
-      setRenderer(renderer)
+      // Initialize Renderer
+      rendererRef.current = new THREE.WebGLRenderer({ antialias: true, alpha: true })
+      rendererRef.current.setPixelRatio(window.devicePixelRatio)
+      rendererRef.current.setSize(scW, scH)
+      rendererRef.current.outputEncoding = THREE.sRGBEncoding
+      rendererRef.current.toneMapping = THREE.ACESFilmicToneMapping
+      rendererRef.current.toneMappingExposure = 1.5
+      container.appendChild(rendererRef.current.domElement)
 
-      // 640 -> 240
-      // 8   -> 6
+      // Initialize Camera
       const scale = scH * 0.005
-      const camera = new THREE.OrthographicCamera(
-        -scale,
-        scale,
-        scale,
-        -scale,
-        0.01,
-        50000
-      )
-      camera.position.copy(initialCameraPosition)
-      camera.lookAt(target)
-      setCamera(camera)
+      cameraRef.current = new THREE.OrthographicCamera(-scale, scale, scale, -scale, 0.01, 50000)
+      cameraRef.current.position.copy(initialCameraPosition.current)
+      cameraRef.current.lookAt(target.current)
 
-      const ambientLight = new THREE.AmbientLight(0xcccccc, 1)
-      scene.add(ambientLight)
+// Ambient Light (soft global light)
+const ambientLight = new THREE.AmbientLight(0xffffff)
+scene.current.add(ambientLight)
 
-      const controls = new OrbitControls(camera, renderer.domElement)
-      controls.autoRotate = true
-      controls.target = target
-      setControls(controls)
+// Directional Light - Simulate a ceiling light
+const directionalLight = new THREE.DirectionalLight(0xffffff, 1.0) // Balanced intensity
+directionalLight.position.set(0, 120, 0) // High up, slightly angled forward
+directionalLight.target.position.set(0, 0, 0) // Pointing at the center of the scene
+scene.current.add(directionalLight)
 
-      loadGLTFModel(scene, '/desk.glb', {
+// Point Light (small additional light source)
+const pointLight = new THREE.PointLight(0xffffff) 
+pointLight.position.set(30, 45, 15)
+scene.current.add(pointLight)
+
+// Renderer configuration
+rendererRef.current.outputEncoding = THREE.sRGBEncoding
+rendererRef.current.toneMapping = THREE.ACESFilmicToneMapping
+rendererRef.current.toneMappingExposure = 1.0 // Reduced exposure
+
+
+      // Controls
+      controlsRef.current = new OrbitControls(cameraRef.current, rendererRef.current.domElement)
+      controlsRef.current.autoRotate = true
+      controlsRef.current.autoRotateSpeed = 1 // Adjust this value for slower spin
+      controlsRef.current.target = target.current
+
+      // Load Model
+      loadGLTFModel(scene.current, '/desk.glb', {
         receiveShadow: false,
         castShadow: false
       }).then(() => {
-        animate()
-        setLoading(false)
-      })
+        setLoading(false); // Spinner disappears after model loads
+      });
+      
 
-      let req = null
-      let frame = 0
+      // Animation
       const animate = () => {
-        req = requestAnimationFrame(animate)
-
-        frame = frame <= 100 ? frame + 1 : frame
-
-        if (frame <= 100) {
-          const p = initialCameraPosition
-          const rotSpeed = -easeOutCirc(frame / 120) * Math.PI * 20
-
-          camera.position.y = 10
-          camera.position.x =
-            p.x * Math.cos(rotSpeed) + p.z * Math.sin(rotSpeed)
-          camera.position.z =
-            p.z * Math.cos(rotSpeed) - p.x * Math.sin(rotSpeed)
-          camera.lookAt(target)
-        } else {
-          controls.update()
-        }
-
-        renderer.render(scene, camera)
+        requestAnimationFrame(animate)
+        controlsRef.current.update()
+        rendererRef.current.render(scene.current, cameraRef.current)
       }
+      animate()
 
+      // Cleanup on unmount
       return () => {
-        console.log('unmount')
-        cancelAnimationFrame(req)
-        renderer.dispose()
+        rendererRef.current.dispose()
+        controlsRef.current.dispose()
+        scene.current.clear()
       }
     }
   }, [])
 
   useEffect(() => {
-    window.addEventListener('resize', handleWindowResize, false)
-    return () => {
-      window.removeEventListener('resize', handleWindowResize, false)
-    }
-  }, [renderer, handleWindowResize])
+    window.addEventListener('resize', handleWindowResize)
+    return () => window.removeEventListener('resize', handleWindowResize)
+  }, [handleWindowResize])
 
   return (
     <DeskContainer ref={refContainer}>
