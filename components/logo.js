@@ -26,7 +26,6 @@ const Logo = () => {
 
   return (
     <Link href="/" scroll={false}>
-      <a>
         <LogoBox>
           <Image src={footPrintImg} width={20} height={20} alt="logo" />
           <Text
@@ -38,7 +37,6 @@ const Logo = () => {
             Umut Toker
           </Text>
         </LogoBox>
-      </a>
     </Link>
   )
 }

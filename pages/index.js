@@ -1,4 +1,4 @@
-import NextLink from 'next/link'
+import NextLink from 'next/link';
 import {
   Link,
   Container,
@@ -10,21 +10,21 @@ import {
   useColorModeValue,
   chakra,
   SimpleGrid
-} from '@chakra-ui/react'
-import { ChevronRightIcon } from '@chakra-ui/icons'
-import Paragraph from '../components/paragraph'
-import Layout from '../components/layouts/article'
-import Section from '../components/section'
-import { IoLogoLinkedin, IoMail, IoLogoGithub } from 'react-icons/io5'
-import Image from 'next/image'
-import { ProjectGridItem } from '../components/grid-item'
-import thumbLinkShortener from '../public/images/projects/link-shortener_eyecatch.png'
-import thumbAlbertSolver from '../public/images/projects/albert-solver_eyecatch.png'
-import BioGroup from '../components/bioGroup'
+} from '@chakra-ui/react';
+import { ChevronRightIcon } from '@chakra-ui/icons';
+import Paragraph from '../components/paragraph';
+import Layout from '../components/layouts/article';
+import Section from '../components/section';
+import { IoLogoLinkedin, IoMail, IoLogoGithub } from 'react-icons/io5';
+import Image from 'next/image';
+import { ProjectGridItem } from '../components/grid-item';
+import thumbLinkShortener from '../public/images/projects/link-shortener_eyecatch.png';
+import thumbAlbertSolver from '../public/images/projects/albert-solver_eyecatch.png';
+import BioGroup from '../components/bioGroup';
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
-})
+});
 
 const Home = () => (
   <Layout>
@@ -66,8 +66,8 @@ const Home = () => (
               src="/images/toker.png"
               alt="Profile image"
               borderRadius="full"
-              width="100%"
-              height="100%"
+              width={100}
+              height={100}
             />
           </Box>
         </Box>
@@ -81,11 +81,11 @@ const Home = () => (
           technologies. I like climbing and hiking other than coding.
         </Paragraph>
         <Box align="center" my={4}>
-          <NextLink href="/projects" passHref scroll={false}>
+          <Link as={NextLink} href="/projects" scroll={false}>
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
               My portfolio
             </Button>
-          </NextLink>
+          </Link>
         </Box>
       </Section>
       <Section delay={0.2}>
@@ -98,7 +98,7 @@ const Home = () => (
             title="Albert Solver"
             thumbnail={thumbAlbertSolver}
           >
-            This project provides an assistance with essays and homework using
+            This project provides assistance with essays and homework using
             cutting-edge AI technology, powered by OpenAI&apos;s GPT-3 language
             model.
           </ProjectGridItem>
@@ -113,7 +113,7 @@ const Home = () => (
         </SimpleGrid>
       </Section>
       <Section delay={0.2}>
-      <BioGroup />
+        <BioGroup />
       </Section>
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
@@ -165,7 +165,7 @@ const Home = () => (
       </Section>
     </Container>
   </Layout>
-)
+);
 
-export default Home
-export { getServerSideProps } from '../components/chakra'
+export default Home;
+export { getServerSideProps } from '../components/chakra';

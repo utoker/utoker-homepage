@@ -1,9 +1,8 @@
-import Logo from './logo'
-import NextLink from 'next/link'
+import Logo from './logo';
+import NextLink from 'next/link';
 import {
   Container,
   Box,
-  Link,
   Stack,
   Heading,
   Flex,
@@ -12,32 +11,35 @@ import {
   MenuList,
   MenuButton,
   IconButton,
-  useColorModeValue
-} from '@chakra-ui/react'
-import { HamburgerIcon } from '@chakra-ui/icons'
-import ThemeToggleButton from './theme-toggle-button'
-import { IoLogoGithub } from 'react-icons/io5'
+  useColorModeValue,
+  Link
+} from '@chakra-ui/react';
+import { HamburgerIcon } from '@chakra-ui/icons';
+import ThemeToggleButton from './theme-toggle-button';
+import { IoLogoGithub } from 'react-icons/io5';
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
-  const active = path === href
-  const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
+  const active = path === href;
+  const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900');
+
   return (
-    <NextLink href={href} passHref scroll={false}>
-      <Link
-        p={2}
-        bg={active ? 'grassTeal' : undefined}
-        color={active ? '#202023' : inactiveColor}
-        target={target}
-        {...props}
-      >
-        {children}
-      </Link>
-    </NextLink>
-  )
-}
+    <Box
+      as={NextLink}
+      href={href}
+      scroll={false}
+      p={2}
+      bg={active ? 'grassTeal' : undefined}
+      color={active ? '#202023' : inactiveColor}
+      target={target}
+      {...props}
+    >
+      {children}
+    </Box>
+  );
+};
 
 const Navbar = props => {
-  const { path } = props
+  const { path } = props;
 
   return (
     <Box
@@ -74,9 +76,6 @@ const Navbar = props => {
           <LinkItem href="/projects" path={path}>
             Projects
           </LinkItem>
-          {/* <LinkItem href="/posts" path={path}>
-            Posts
-          </LinkItem> */}
           <LinkItem
             target="_blank"
             href="https://github.com/utoker/utoker-homepage"
@@ -103,18 +102,17 @@ const Navbar = props => {
                 aria-label="Options"
               />
               <MenuList>
-                <NextLink href="/" passHref>
-                  <MenuItem as={Link}>About</MenuItem>
-                </NextLink>
-                <NextLink href="/projects" passHref>
-                  <MenuItem as={Link}>Projects</MenuItem>
-                </NextLink>
-                {/* <NextLink href="/posts" passHref>
-                  <MenuItem as={Link}>Posts</MenuItem>
-                </NextLink> */}
+                <MenuItem as={NextLink} href="/" scroll={false}>
+                  About
+                </MenuItem>
+                <MenuItem as={NextLink} href="/projects" scroll={false}>
+                  Projects
+                </MenuItem>
                 <MenuItem
                   as={Link}
                   href="https://github.com/utoker/utoker-homepage"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   View Source
                 </MenuItem>
@@ -124,7 +122,7 @@ const Navbar = props => {
         </Box>
       </Container>
     </Box>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
