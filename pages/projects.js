@@ -10,7 +10,7 @@ import {
 const Projects = () => {
   return (
     <Layout title="Projects">
-      <Container>
+      <Container maxW="container.md">
         <Heading as="h3" fontSize={20} mb={4}>
           React Native Apps
         </Heading>
