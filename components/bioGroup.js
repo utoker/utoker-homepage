@@ -1,4 +1,5 @@
 import React from 'react'
+import NextLink from 'next/link'
 import { Heading, Link, Text, Icon } from '@chakra-ui/react'
 import { BioSection, BioYear } from './bio'
 import { FaCircle, FaRegCircle } from 'react-icons/fa'
@@ -71,7 +72,11 @@ const BioGroup = () => {
         certification.
         <br />
         <Icon as={FaCircle} color="teal.500" boxSize={2} mr={2} />
-        Built and deployed projects using React and JavaScript.
+        Built and deployed{' '}
+        <Link as={NextLink} href="/projects" scroll={false}>
+          projects
+        </Link>{' '}
+        using React and JavaScript.
       </BioSection>
 
       <BioSection>
