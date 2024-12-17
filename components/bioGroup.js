@@ -87,7 +87,7 @@ const BioGroup = () => {
         <br />
         <Icon as={FaCircle} color="teal.500" boxSize={2} mr={2} />
         Worked as a Technical Consultant, delivering end-to-end smart home and
-        networking solutions
+        networking solutions.
       </BioSection>
 
       <BioSection>
@@ -122,12 +122,12 @@ const BioGroup = () => {
           {' '}
           Eskişehir Osmangazi University
         </Link>{' '}
-        with a Bachelor's degree in Business Administration.
+        with a Bachelor&apos;s degree in Business Administration.
         <br />
         <Icon as={FaCircle} color="teal.500" boxSize={2} mr={2} />
         Conducted a final year research project analyzing the CBOE Volatility
         Index (VIX) and its relationship with major stock indices, including
-        DAX, S&P 500, and FTSE 100.
+        DAX, S&amp;P 500, and FTSE 100.
         <br />
         <Icon as={FaCircle} color="teal.500" boxSize={2} mr={2} />
         Led a marketing project, analyzing survey data from 1,746 participants
@@ -159,7 +159,7 @@ const BioGroup = () => {
           {' '}
           dotarehberi.com
         </Link>{' '}
-        to publish a Dota 2 guides, attracting over 4,400 unique visitors every
+        to publish Dota 2 guides, attracting over 4,400 unique visitors every
         weekend.
       </BioSection>
     </>

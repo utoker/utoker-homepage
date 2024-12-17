@@ -1,4 +1,4 @@
-import NextLink from 'next/link';
+import NextLink from 'next/link'
 import {
   Link,
   Container,
@@ -7,28 +7,28 @@ import {
   Button,
   List,
   ListItem,
-  useColorModeValue,
+  // useColorModeValue,
   chakra,
   SimpleGrid
-} from '@chakra-ui/react';
-import { ChevronRightIcon } from '@chakra-ui/icons';
-import Paragraph from '../components/paragraph';
-import Layout from '../components/layouts/article';
-import Section from '../components/section';
-import { IoLogoLinkedin, IoMail, IoLogoGithub } from 'react-icons/io5';
-import Image from 'next/image';
-import { ProjectGridItem } from '../components/grid-item';
-import thumbLinkShortener from '../public/images/projects/link-shortener_eyecatch.png';
-import thumbAlbertSolver from '../public/images/projects/albert-solver_eyecatch.png';
-import BioGroup from '../components/bioGroup';
+} from '@chakra-ui/react'
+import { ChevronRightIcon } from '@chakra-ui/icons'
+import Paragraph from '../components/paragraph'
+import Layout from '../components/layouts/article'
+import Section from '../components/section'
+import { IoLogoLinkedin, IoMail, IoLogoGithub } from 'react-icons/io5'
+import Image from 'next/image'
+import { ProjectGridItem } from '../components/grid-item'
+import thumbLinkShortener from '../public/images/projects/link-shortener_eyecatch.png'
+import thumbAlbertSolver from '../public/images/projects/albert-solver_eyecatch.png'
+import BioGroup from '../components/bioGroup'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
-});
+})
 
 const Home = () => (
   <Layout>
-    <Container  maxW="container.md" >
+    <Container maxW="container.md">
       {/* <Box
         borderRadius="lg"
         mb={6}
@@ -77,8 +77,9 @@ const Home = () => (
           About
         </Heading>
         <Paragraph>
-        I enjoys building tools that solve real problems. I’ve worked on everything from Python backends to modern web apps with React and Next.js, while exploring cloud tools like AWS and Azure. 
-
+          I enjoys building tools that solve real problems. I’ve worked on
+          everything from Python backends to modern web apps with React and
+          Next.js, while exploring cloud tools like AWS and Azure.
         </Paragraph>
         <Box align="center" my={4}>
           <Link as={NextLink} href="/projects" scroll={false}>
@@ -165,7 +166,7 @@ const Home = () => (
       </Section>
     </Container>
   </Layout>
-);
+)
 
-export default Home;
-export { getServerSideProps } from '../components/chakra';
+export default Home
+export { getServerSideProps } from '../components/chakra'
