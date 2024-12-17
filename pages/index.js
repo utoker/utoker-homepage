@@ -29,7 +29,7 @@ const ProfileImage = chakra(Image, {
 const Home = () => (
   <Layout>
     <Container>
-      <Box
+      {/* <Box
         borderRadius="lg"
         mb={6}
         p={3}
@@ -38,7 +38,7 @@ const Home = () => (
         css={{ backdropFilter: 'blur(10px)' }}
       >
         Hello, I&apos;m a web developer based in New York!
-      </Box>
+      </Box> */}
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
@@ -77,13 +77,13 @@ const Home = () => (
           About
         </Heading>
         <Paragraph>
-          I have a passion for building web applications and I love to learn new
-          technologies. I like climbing and hiking other than coding.
+        I enjoys building tools that solve real problems. I’ve worked on everything from Python backends to modern web apps with React and Next.js, while exploring cloud tools like AWS and Azure. 
+
         </Paragraph>
         <Box align="center" my={4}>
           <Link as={NextLink} href="/projects" scroll={false}>
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              My portfolio
+              My projects
             </Button>
           </Link>
         </Box>

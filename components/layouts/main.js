@@ -12,7 +12,7 @@ const LazyVoxelDesk = dynamic(() => import('../voxel-desk'), {
 
 const Main = ({ children, router }) => {
   return (
-    <Box as="main" pb={8}>
+    <Box as="main" pb={8} w="100%">
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Umut's homepage" />
@@ -32,7 +32,7 @@ const Main = ({ children, router }) => {
         <title>Umut Toker - Homepage</title>
       </Head>
       <NavBar path={router.asPath} />
-      <Container maxW="container.md" pt={14}>
+      <Container maxW="100%" px={0} py={0} pt={14}>
         <LazyVoxelDesk />
         {children}
         <Footer />
