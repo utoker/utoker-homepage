@@ -8,7 +8,6 @@ import {
   List,
   ListItem,
   // useColorModeValue,
-  chakra,
   SimpleGrid
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
@@ -36,11 +35,7 @@ const Home = () => (
       >
         Hello, I&apos;m a web developer based in New York!
       </Box> */}
-      <Box
-        display="flex"
-        alignItems="center" // Align items vertically centered
-        justifyContent="space-between" // Distribute space evenly
-      >
+      <Box display="flex" alignItems="center" justifyContent="space-between">
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
             Umut Toker
