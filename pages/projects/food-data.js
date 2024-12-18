@@ -42,9 +42,6 @@ const FoodData = () => (
         </ListItem>
       </List>
       <ProjectImage src="/images/projects/food-data.gif" alt="Food Data" />
-      <ProjectImage src="/images/projects/fooddata_01.png" alt="Food Data" />
-      <ProjectImage src="/images/projects/fooddata_02.png" alt="Food Data" />
-      <ProjectImage src="/images/projects/fooddata_03.png" alt="Food Data" />
     </Container>
   </Layout>
 )

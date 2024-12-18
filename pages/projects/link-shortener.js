@@ -39,14 +39,6 @@ const FoodOrderApp = () => (
         </ListItem>
       </List>
       <ProjectImage src="/images/projects/reqq.gif" alt="Reqq Link Shortener" />
-      <ProjectImage
-        src="/images/projects/link-shortener_01.png"
-        alt="Reqq Link Shortener"
-      />
-      <ProjectImage
-        src="/images/projects/link-shortener_02.png"
-        alt="Reqq Link Shortener"
-      />
     </Container>
   </Layout>
 )

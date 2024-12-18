@@ -1,4 +1,4 @@
-import { Container, Badge, Link, List, ListItem } from '@chakra-ui/react'
+import { Container, Badge, Link, List, ListItem, Box } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, ProjectImage, Meta } from '../../components/project'
 import P from '../../components/paragraph'
@@ -35,10 +35,12 @@ const FoodCheck = () => (
           <span>React Native / JavaScript </span>
         </ListItem>
       </List>
-      <ProjectImage
-        src="/images/projects/food-check.gif"
-        alt="Food Check App"
-      />
+      <Box>
+        <ProjectImage
+          src="/images/projects/food-check.gif"
+          alt="Food Check App"
+        />
+      </Box>
     </Container>
   </Layout>
 )

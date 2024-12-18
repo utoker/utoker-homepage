@@ -21,10 +21,7 @@ import { ProjectGridItem } from '../components/grid-item'
 import thumbLinkShortener from '../public/images/projects/link-shortener_eyecatch.png'
 import thumbAlbertSolver from '../public/images/projects/albert-solver_eyecatch.png'
 import BioGroup from '../components/bioGroup'
-
-const ProfileImage = chakra(Image, {
-  shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
-})
+import TokerImage from '../public/images/Toker.jpg' // Static import
 
 const Home = () => (
   <Layout>
@@ -39,39 +36,40 @@ const Home = () => (
       >
         Hello, I&apos;m a web developer based in New York!
       </Box> */}
-      <Box display={{ md: 'flex' }}>
+      <Box
+        display="flex"
+        alignItems="center" // Align items vertically centered
+        justifyContent="space-between" // Distribute space evenly
+      >
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
             Umut Toker
           </Heading>
           <p>Software Engineer</p>
         </Box>
-        <Box
-          flexShrink={0}
-          mt={{ base: 4, md: 0 }}
-          ml={{ md: 6 }}
-          textAlign="center"
-        >
+        <Box flexShrink={0} ml={{ md: 6 }} textAlign="center">
           <Box
             borderColor="whiteAlpha.800"
             borderWidth={2}
             borderStyle="solid"
-            w="100px"
-            h="100px"
+            w={{ base: '120px', md: '230px' }} // Adjust size: 120px on mobile, 230px on desktop
+            h={{ base: '120px', md: '230px' }}
             display="inline-block"
             borderRadius="full"
             overflow="hidden"
           >
-            <ProfileImage
-              src="/images/Toker.JPEG"
+            <Image
+              src={TokerImage}
               alt="Profile image"
-              borderRadius="full"
-              width={100}
-              height={100}
+              width={230} // Static width for Next.js Image
+              height={230}
+              priority // Load the image faster
+              placeholder="blur" // Add blur effect until loaded
             />
           </Box>
         </Box>
       </Box>
+
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
           About
