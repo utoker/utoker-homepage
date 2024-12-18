@@ -6,7 +6,7 @@ import Layout from '../../components/layouts/article'
 
 const EtchASketch = () => (
   <Layout title="Etch a Sketch">
-    <Container>
+    <Container maxW="container.lg">
       <Title>
         Etch a Sketch <Badge>2021</Badge>
       </Title>

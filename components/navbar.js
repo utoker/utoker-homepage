@@ -1,5 +1,5 @@
-import Logo from './logo';
-import NextLink from 'next/link';
+import Logo from './logo'
+import NextLink from 'next/link'
 import {
   Container,
   Box,
@@ -13,14 +13,14 @@ import {
   IconButton,
   useColorModeValue,
   Link
-} from '@chakra-ui/react';
-import { HamburgerIcon } from '@chakra-ui/icons';
-import ThemeToggleButton from './theme-toggle-button';
-import { IoLogoGithub } from 'react-icons/io5';
+} from '@chakra-ui/react'
+import { HamburgerIcon } from '@chakra-ui/icons'
+import ThemeToggleButton from './theme-toggle-button'
+import { IoLogoGithub } from 'react-icons/io5'
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
-  const active = path === href;
-  const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900');
+  const active = path === href
+  const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
 
   return (
     <Box
@@ -35,11 +35,11 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
     >
       {children}
     </Box>
-  );
-};
+  )
+}
 
 const Navbar = props => {
-  const { path } = props;
+  const { path } = props
 
   return (
     <Box
@@ -54,7 +54,7 @@ const Navbar = props => {
       <Container
         display="flex"
         p={2}
-        maxW="container.md"
+        maxW="container.lg"
         wrap="wrap"
         align="center"
         justify="space-between"
@@ -122,7 +122,7 @@ const Navbar = props => {
         </Box>
       </Container>
     </Box>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

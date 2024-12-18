@@ -6,7 +6,7 @@ import Layout from '../../components/layouts/article'
 
 const SearchNpm = () => (
   <Layout title="Search NPM">
-    <Container>
+    <Container maxW="container.lg">
       <Title>
         Search NPM <Badge>2022</Badge>
       </Title>

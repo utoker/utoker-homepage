@@ -6,7 +6,7 @@ import Layout from '../../components/layouts/article'
 
 const MemoryGame = () => (
   <Layout title="Memory Game">
-    <Container>
+    <Container maxW="container.lg">
       <Title>
         Memory Game <Badge>2021</Badge>
       </Title>

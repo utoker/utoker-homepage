@@ -6,7 +6,7 @@ import Layout from '../../components/layouts/article'
 
 const FoodOrderApp = () => (
   <Layout title="Reqq Link Shortener">
-    <Container>
+    <Container maxW="container.lg">
       <Title>
         Reqq Link Shortener <Badge>2021</Badge>
       </Title>

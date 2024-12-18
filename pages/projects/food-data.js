@@ -6,7 +6,7 @@ import Layout from '../../components/layouts/article'
 
 const FoodData = () => (
   <Layout title="Food Data">
-    <Container>
+    <Container maxW="container.lg">
       <Title>
         Food Data<Badge>2022</Badge>
       </Title>

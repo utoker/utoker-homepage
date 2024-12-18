@@ -6,7 +6,7 @@ import Section from '../components/section'
 
 const Posts = () => (
   <Layout title="Posts">
-    <Container>
+    <Container maxW="container.lg">
       <Heading as="h3" fontSize={20} mb={4}>
         Posts
       </Heading>

@@ -6,7 +6,7 @@ import Layout from '../../components/layouts/article'
 
 const ResumeBuilder = () => (
   <Layout title="Resume Builder">
-    <Container>
+    <Container maxW="container.lg">
       <Title>
         Resume Builder <Badge>2021</Badge>
       </Title>

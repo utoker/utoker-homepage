@@ -6,7 +6,7 @@ import Layout from '../../components/layouts/article'
 
 const TicTacToe = () => (
   <Layout title="Tic Tac Toe">
-    <Container>
+    <Container maxW="container.lg">
       <Title>
         Tic Tac Toe <Badge>2021</Badge>
       </Title>

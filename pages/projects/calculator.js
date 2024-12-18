@@ -6,7 +6,7 @@ import Layout from '../../components/layouts/article'
 
 const Calculator = () => (
   <Layout title="Calculator">
-    <Container>
+    <Container maxW="container.lg">
       <Title>
         Calculator <Badge>2021</Badge>
       </Title>

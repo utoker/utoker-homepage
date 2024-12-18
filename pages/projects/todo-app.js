@@ -6,7 +6,7 @@ import Layout from '../../components/layouts/article'
 
 const TodoApp = () => (
   <Layout title="To Do App">
-    <Container>
+    <Container maxW="container.lg">
       <Title>
         To Do App <Badge>2021</Badge>
       </Title>

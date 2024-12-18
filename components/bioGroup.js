@@ -12,29 +12,58 @@ const BioGroup = () => {
       </Heading>
 
       <BioSection>
-        <BioYear>2024</BioYear>
-        <Icon as={FaCircle} color="teal.500" boxSize={2} mr={2} />
-        Started as a Technical Specialist at
-        <Link href="https://www.advanco.com" isExternal>
-          {' '}
-          Advanco SA
-        </Link>
-        , handling software deployments and troubleshooting client issues.
-      </BioSection>
-
-      <BioSection>
         <BioYear>2023</BioYear>
         <Icon as={FaCircle} color="teal.500" boxSize={2} mr={2} />
-        Volunteered as a Software Engineer at
+        Started as a Technical Specialist at{' '}
+        <Link href="https://www.advanco.com" isExternal>
+          Advanco SA
+        </Link>
+        , focusing on software deployments, support, and software solutions
+        <br />
+        <Text ml="20">
+          <Icon as={FaRegCircle} color="teal.500" boxSize={2} mr={2} />
+          Performed 30+ software installations, following GAMP 5 compliant
+          protocols for healthcare compliance.
+        </Text>
+        <Text ml="20">
+          <Icon as={FaRegCircle} color="teal.500" boxSize={2} mr={2} />
+          Resolved 60+ complex tickets, improving system performance and
+          boosting client satisfaction.
+        </Text>
+        <Text ml="20">
+          <Icon as={FaRegCircle} color="teal.500" boxSize={2} mr={2} />
+          Earned Systech Field Engineer certification in aggregation and
+          item-level serialization
+        </Text>
+        <Text ml="20">
+          <Icon as={FaRegCircle} color="teal.500" boxSize={2} mr={2} />
+          Represented Advanco at HDA 2024, showcasing ARC software and engaging
+          with industry leaders.
+        </Text>
+        <Icon as={FaCircle} color="teal.500" boxSize={2} mr={2} ml={-0.5} />
+        Volunteered as a Software Engineer at{' '}
         <Link href="https://www.thecitytutors.org" isExternal>
-          {' '}
           The City Tutors
         </Link>
-        , supporting NYC-based learners.
-        <br />
-        <Icon as={FaCircle} color="teal.500" boxSize={2} mr={2} />
+        , a non-profit organization providing free learning services to NYC
+        residents.
+        <Text ml="20">
+          <Icon as={FaRegCircle} color="teal.500" boxSize={2} mr={2} />
+          Built a Username Recovery System using Python and Django, reducing
+          support team workload by 32%.
+        </Text>
+        <Text ml="20">
+          <Icon as={FaRegCircle} color="teal.500" boxSize={2} mr={2} />
+          Modernized the login page with enhanced UI and security features,
+          resulting in a 28% increase in successful logins.
+        </Text>
+        <Text ml="20">
+          <Icon as={FaRegCircle} color="teal.500" boxSize={2} mr={2} />
+          Resolved a critical bug in the tutor matching system, reducing
+          onboarding time by 18%.
+        </Text>
+        <Icon as={FaCircle} color="teal.500" boxSize={2} mr={2} ml={-0.5} />
         Earned certifications:
-        <br />
         <Text ml="20">
           <Icon as={FaRegCircle} color="teal.500" boxSize={2} mr={2} />
           <Link
@@ -71,7 +100,7 @@ const BioGroup = () => {
         </Link>{' '}
         certification.
         <br />
-        <Icon as={FaCircle} color="teal.500" boxSize={2} mr={2} />
+        <Icon as={FaCircle} color="teal.500" boxSize={2} mr={2} ml={-0.5} />
         Built and deployed{' '}
         <Link as={NextLink} href="/projects" scroll={false}>
           projects
@@ -85,7 +114,7 @@ const BioGroup = () => {
         Completed Full Stack JavaScript Curriculum at The Odin Project and
         freeCodeCamp.
         <br />
-        <Icon as={FaCircle} color="teal.500" boxSize={2} mr={2} />
+        <Icon as={FaCircle} color="teal.500" boxSize={2} mr={2} ml={-0.5} />
         Worked as a Technical Consultant, delivering end-to-end smart home and
         networking solutions.
       </BioSection>
@@ -105,12 +134,11 @@ const BioGroup = () => {
           {' '}
           Powers IoT
         </Link>
-        , installing 50+ smart devices, including security systems.
+        , installing 150+ smart devices, including security systems.
         <br />
-        <Icon as={FaCircle} color="teal.500" boxSize={2} mr={2} />
-        Gained hands-on experience as an Apprentice Electrician at Barbato &
-        Rucinski Enterprises, installing 100+ Cat5 cables to enhance network
-        performance.
+        <Icon as={FaCircle} color="teal.500" boxSize={2} mr={2} ml={-0.5} />
+        Apprentice Electrician at Barbato & Rucinski Enterprises, installed 100+
+        Cat5 cables to improve network performance.
         <br />
       </BioSection>
 
@@ -124,16 +152,15 @@ const BioGroup = () => {
         </Link>{' '}
         with a Bachelor&apos;s degree in Business Administration.
         <br />
-        <Icon as={FaCircle} color="teal.500" boxSize={2} mr={2} />
+        <Icon as={FaCircle} color="teal.500" boxSize={2} mr={2} ml={-0.5} />
         Conducted a final year research project analyzing the CBOE Volatility
-        Index (VIX) and its relationship with major stock indices, including
-        DAX, S&amp;P 500, and FTSE 100.
+        Index (VIX) and its relationship with major stock indices.
         <br />
-        <Icon as={FaCircle} color="teal.500" boxSize={2} mr={2} />
+        <Icon as={FaCircle} color="teal.500" boxSize={2} mr={2} ml={-0.5} />
         Led a marketing project, analyzing survey data from 1,746 participants
         using SPSS to deliver actionable insights.
         <br />
-        <Icon as={FaCircle} color="teal.500" boxSize={2} mr={2} />
+        <Icon as={FaCircle} color="teal.500" boxSize={2} mr={2} ml={-0.5} />
         Completed an internship at{' '}
         <Link href="https://www.koc.com.tr/en" isExternal>
           {' '}
@@ -150,7 +177,7 @@ const BioGroup = () => {
         Co-founded the ESOGU E-Sports Club, creating a platform for competitive
         gaming and leadership initiatives.
         <br />
-        <Icon as={FaCircle} color="teal.500" boxSize={2} mr={2} />
+        <Icon as={FaCircle} color="teal.500" boxSize={2} mr={2} ml={-0.5} />
         Developed a WordPress website{' '}
         <Link
           href="https://web.archive.org/web/20150515061955/http://dotarehberi.com/"
