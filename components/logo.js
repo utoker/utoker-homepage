@@ -22,21 +22,20 @@ const LogoBox = styled.span`
 `
 
 const Logo = () => {
-  const footPrintImg = `/images/footprint${useColorModeValue('', '-dark')}.png`
+  const footPrintImg = `/images/umut.png`
 
   return (
     <Link href="/" scroll={false}>
-        <LogoBox>
-          <Image src={footPrintImg} width={20} height={20} alt="logo" />
-          <Text
-            color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-            fontFamily='M PLUS Rounded 1c", sans-serif'
-            fontWeight="bold"
-            ml={3}
-          >
-            Umut Toker
-          </Text>
-        </LogoBox>
+      <LogoBox>
+        <Image src={footPrintImg} width={20} height={20} alt="logo" />
+        <Text
+          color={useColorModeValue('gray.800', 'whiteAlpha.900')}
+          fontFamily='M PLUS Rounded 1c", sans-serif'
+          fontWeight="bold"
+        >
+          Umut Toker
+        </Text>
+      </LogoBox>
     </Link>
   )
 }

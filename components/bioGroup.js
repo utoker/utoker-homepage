@@ -111,8 +111,15 @@ const BioGroup = () => {
       <BioSection>
         <BioYear>2021</BioYear>
         <Icon as={FaCircle} color="teal.500" boxSize={2} mr={2} />
-        Completed Full Stack JavaScript Curriculum at The Odin Project and
-        freeCodeCamp.
+        Completed Full Stack JavaScript Curriculum at{' '}
+        <Link href="https://www.theodinproject.com/" isExternal>
+          The Odin Project
+        </Link>{' '}
+        and{' '}
+        <Link href="https://www.freecodecamp.org/" isExternal>
+          freeCodeCamp
+        </Link>
+        .
         <br />
         <Icon as={FaCircle} color="teal.500" boxSize={2} mr={2} ml={-0.5} />
         Worked as a Technical Consultant, delivering end-to-end smart home and
