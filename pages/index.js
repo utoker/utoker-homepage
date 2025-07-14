@@ -47,7 +47,7 @@ const Home = () => (
             borderColor="whiteAlpha.800"
             borderWidth={2}
             borderStyle="solid"
-            w={{ base: '120px', md: '230px' }} // Adjust size: 120px on mobile, 230px on desktop
+            w={{ base: '120px', md: '230px' }}
             h={{ base: '120px', md: '230px' }}
             display="inline-block"
             borderRadius="full"
@@ -70,9 +70,10 @@ const Home = () => (
           About
         </Heading>
         <Paragraph>
-          I enjoys building tools that solve real problems. I’ve worked on
-          everything from Python backends to modern web apps with React and
-          Next.js, while exploring cloud tools like AWS and Azure.
+          I’m a full-stack engineer turning ideas into production-ready tools.
+          Right now I’m building edge-optimized React 19 / Next 15 apps on
+          Supabase while pursuing an M.S. in Software Engineering at Western
+          Governors University to sharpen my domain-driven-design expertise.
         </Paragraph>
         <Box align="center" my={4}>
           <Link as={NextLink} href="/projects" scroll={false}>
@@ -88,21 +89,20 @@ const Home = () => (
         </Heading>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <ProjectGridItem
-            id="albert-solver"
-            title="Albert Solver"
-            thumbnail={thumbAlbertSolver}
-          >
-            This project provides assistance with essays and homework using
-            cutting-edge AI technology, powered by OpenAI&apos;s GPT-3 language
-            model.
-          </ProjectGridItem>
-          <ProjectGridItem
             id="link-shortener"
             title="Reqq Link Shortener"
             thumbnail={thumbLinkShortener}
           >
-            The reqq.cc is an easy-to-use link shortening service with an option
-            to use custom URLs.
+            Edge-first URL shortener rebuilt in 2025.. Custom slugs, Supabase
+            RLS, and Vercel Edge Middleware deliver p95 redirects in 32 ms
+          </ProjectGridItem>
+          <ProjectGridItem
+            id="albert-solver"
+            title="Albert Solver"
+            thumbnail={thumbAlbertSolver}
+          >
+            Study companion powered by GPT-4: outlines essays, suggests
+            citations, and exports Markdown notes in one click
           </ProjectGridItem>
         </SimpleGrid>
       </Section>
