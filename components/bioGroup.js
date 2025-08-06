@@ -35,7 +35,7 @@ const BioGroup = () => {
         <BioYear>2023</BioYear>
         <Text>
           <Icon as={FaCircle} color="teal.500" boxSize={2} mr={2} />
-          Started as a Software Support Engineer at{' '}
+          Started as a Software Engineer Associate at{' '}
           <Link href="https://www.advanco.com" isExternal>
             Advanco SA.
           </Link>
@@ -73,7 +73,7 @@ const BioGroup = () => {
 
         <Text>
           <Icon as={FaCircle} color="teal.500" boxSize={2} mr={2} />
-          Volunteered as Associate Software Engineer at{' '}
+          Volunteered as Software Engineer Intern at{' '}
           <Link href="https://www.thecitytutors.org" isExternal>
             The City Tutors
           </Link>

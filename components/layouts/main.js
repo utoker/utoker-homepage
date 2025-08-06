@@ -10,6 +10,8 @@ const LazyVoxelDesk = dynamic(() => import('../voxel-desk'), {
   loading: () => <VoxelDeskLoader />
 })
 
+const isHomePage = (path) => path === '/' || path === '/index'
+
 const Main = ({ children, router }) => {
   return (
     <Box as="main" pb={8} w="100%">
@@ -26,7 +28,7 @@ const Main = ({ children, router }) => {
       </Head>
       <NavBar path={router.asPath} />
       <Container maxW="container.lg" px={0} py={0} pt={14}>
-        <LazyVoxelDesk />
+        {isHomePage(router.asPath) && <LazyVoxelDesk />}
         {children}
         <Footer />
       </Container>
