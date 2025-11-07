@@ -1,5 +1,4 @@
 import React from 'react'
-import NextLink from 'next/link'
 import { Heading, Link, Text, Icon } from '@chakra-ui/react'
 import { BioSection, BioYear } from './bio'
 import { FaCircle, FaRegCircle } from 'react-icons/fa'
