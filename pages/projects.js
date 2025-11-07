@@ -12,17 +12,17 @@ const Projects = () => {
     <Layout title="Projects">
       <Container maxW="container.lg">
         <Heading as="h3" fontSize={20} mb={4}>
-          React Native Apps
-        </Heading>
-        <SimpleGrid columns={[1, 1, 2]} gap={6}>
-          <ReactNativeProjects />
-        </SimpleGrid>
-
-        <Heading as="h3" fontSize={20} mb={4}>
           React Projects
         </Heading>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <ReactProjects />
+        </SimpleGrid>
+
+        <Heading as="h3" fontSize={20} mb={4}>
+          React Native Apps
+        </Heading>
+        <SimpleGrid columns={[1, 1, 2]} gap={6}>
+          <ReactNativeProjects />
         </SimpleGrid>
 
         <Section delay={0.3}>

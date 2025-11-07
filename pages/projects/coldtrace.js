@@ -4,42 +4,48 @@ import { Title, ProjectImage, Meta } from '../../components/project'
 import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
-const AlbertSolverApp = () => (
-  <Layout title="Albert Solver">
+const ColdTraceApp = () => (
+  <Layout title="Cold Trace">
     <Container maxW="container.lg">
       <Title>
-        Albert Solver <Badge>2023</Badge>
+        Cold Trace <Badge>2025</Badge>
       </Title>
       <P>
-        This project aims to provide a comprehensive solution for expert
-        assistance with essays and homework using cutting-edge AI technology,
-        powered by OpenAI&apos;s GPT-3 language model.
+        IoT monitoring dashboard for vaccine cold chains. Features real-time
+        data visualization (Recharts), GraphQL subscriptions, and a
+        high-fidelity simulation engine.
       </P>
       <P> </P>
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Website</Meta>
-          <Link href="https://www.albertsolver.com">
-            https://www.albertsolver.com
+          <Link href="https://www.coldtrace.app">
+            https://www.coldtrace.app
             <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>
           <Meta>Source</Meta>
-          <Link href="https://github.com/utoker/albert-solver">
-            https://github.com/utoker/albert-solver
+          <Link href="https://github.com/utoker/coldtrace">
+            https://github.com/utoker/coldtrace
             <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>
           <Meta>Built with</Meta>
-          <span>TS / Next / Prisma / NextAuth / NextUI / SWR / Stripe</span>
+          <span>
+            Next.js 15 / TypeScript / GraphQL / Recharts / Zustand / Turborepo /
+            shadcn ui
+          </span>
         </ListItem>
       </List>
-      <ProjectImage src="/images/projects/albert.gif" alt="Albert Solver" />
+      <ProjectImage
+        src="/images/projects/coldtrace_eyecatch.png"
+        alt="ColdTrace - Real-time IoT Monitoring Platform"
+      />
     </Container>
   </Layout>
 )
 
-export default AlbertSolverApp
+export default ColdTraceApp
 export { getServerSideProps } from '../../components/chakra'

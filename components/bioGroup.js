@@ -14,22 +14,58 @@ const BioGroup = () => {
         <BioYear>2025</BioYear>
         <Text>
           <Icon as={FaCircle} color="teal.500" boxSize={2} mr={2} />
-          Re-built{' '}
+          Started as a Founding Engineer (Contract) at{' '}
+          <Link href="https://www.tracius.com" isExternal>
+            Tracius.
+          </Link>
+        </Text>
+        <Text ml="5">
+          <Icon as={FaRegCircle} color="teal.500" boxSize={2} mr={2} />
+          Architected a multi-tenant, GS1-compliant traceability platform
+          (Digital Link) using a Turborepo for end-to-end supply chain
+          visibility.
+        </Text>
+        <Text ml="5">
+          <Icon as={FaRegCircle} color="teal.500" boxSize={2} mr={2} />
+          Designed and implemented the NestJS backend, featuring a secure
+          multi-tenant API, Prisma ORM, and an immutable audit trail for
+          regulatory compliance.
+        </Text>
+        <Text ml="5">
+          <Icon as={FaRegCircle} color="teal.500" boxSize={2} mr={2} />
+          Engineered the Next.js frontend (shadcn/ui), implementing multi-tenant
+          authentication with Auth0 and NextAuth, and building core features for
+          serial number lifecycle management.
+        </Text>
+        <Text>
+          <Icon as={FaCircle} color="teal.500" boxSize={2} mr={2} />
+          Architected{' '}
+          <Link href="https://www.coldtrace.app" isExternal>
+            ColdTrace
+          </Link>
+          , a real-time IoT platform handling 10K+ updates/sec with GraphQL
+          subscriptions and Recharts/Leaflet visualizations.
+          <br />
+        </Text>
+        <Text>
+          <Icon as={FaCircle} color="teal.500" boxSize={2} mr={2} />
+          Engineered{' '}
           <Link href="https://www.reqq.cc/" isExternal>
             reqq.cc
-          </Link>{' '}
-          on React 19 + Next 15 + Supabase → p95 redirect latency 32 ms.
+          </Link>
+          , a high-performance URL shortener with sub-40ms latency using Next.js
+          Edge Runtime and atomic Postgres functions.
           <br />
         </Text>
         <Text>
           <Icon as={FaCircle} color="teal.500" boxSize={2} mr={2} />
           Started <b>M.S. Software Engineering</b>, Western Governors University
-          (exp. 2027).
+          (exp. 2026).
         </Text>
-        <Text>
+        {/* <Text>
           <Icon as={FaCircle} color="teal.500" boxSize={2} mr={2} />
           Earned <b>Introduction to Python Programming</b> badge (WGU).
-        </Text>
+        </Text> */}
       </BioSection>
       <BioSection>
         <BioYear>2023</BioYear>
@@ -42,55 +78,36 @@ const BioGroup = () => {
         </Text>
         <Text ml="5">
           <Icon as={FaRegCircle} color="teal.500" boxSize={2} mr={2} />
-          Automated deployment & config via T-SQL scripts, cutting setup time
-          2h/client.
+          Led end-to-end technical implementation of an MES platform for a key
+          enterprise client, Thermo Fisher Scientific, in Italy.
         </Text>
         <Text ml="5">
           <Icon as={FaRegCircle} color="teal.500" boxSize={2} mr={2} />
-          Authored T-SQL fixes that resolved 50% of live-data anomalies within
-          30 min.
-        </Text>
-        <Text ml="5">
-          <Icon as={FaRegCircle} color="teal.500" boxSize={2} mr={2} />
-          Partnered with R&D to reproduce issues, analyse logs, and ship
-          coordinated hot-fixes.
-        </Text>
-        <Text ml="5">
-          <Icon as={FaRegCircle} color="teal.500" boxSize={2} mr={2} />
-          Wrote install/debug guides; trained 2 teammates, boosting first-line
-          resolution +35%.
-        </Text>
-        <Text ml="5">
-          <Icon as={FaRegCircle} color="teal.500" boxSize={2} mr={2} />
-          Led onsite installation & validation for Thermo Fisher Scientific
-          (Italy).
-        </Text>
-        <Text ml="5">
-          <Icon as={FaRegCircle} color="teal.500" boxSize={2} mr={2} />
-          Demoed ARC to 200 + attendees at HDA 2024, collecting feedback that
-          drove 2 UI fixes.
+          Drove product roadmap improvements by presenting the platform to 200+
+          stakeholders at HDA2024 and integrating their feedback.
         </Text>
 
         <Text>
           <Icon as={FaCircle} color="teal.500" boxSize={2} mr={2} />
-          Volunteered as Software Engineer Intern at{' '}
+          Software Engineer Intern at{' '}
           <Link href="https://www.thecitytutors.org" isExternal>
-            The City Tutors
+            The City Tutors.
           </Link>
         </Text>
         <Text ml="5">
           <Icon as={FaRegCircle} color="teal.500" boxSize={2} mr={2} />
-          Built Python/Django username-recovery system → support tickets -30 %.
+          Reduced user support tickets by 30% by designing and implementing a
+          full-stack username recovery feature with a React and Django.
         </Text>
         <Text ml="5">
           <Icon as={FaRegCircle} color="teal.500" boxSize={2} mr={2} />
-          Modernized the login page with enhanced UI and security features,
-          resulting in a 28% increase in successful logins.
+          Improved successful login rates by 22% by redesigning the
+          authentication UI/UX using React and Tailwind CSS.
         </Text>
         <Text ml="5">
           <Icon as={FaRegCircle} color="teal.500" boxSize={2} mr={2} />
-          Redesigned login page with custom validation, raising success rate
-          +22%.
+          Prevented 95% of invalid form submissions by implementing
+          comprehensive real-time validation and React error boundaries.
         </Text>
         <Text>
           <Icon as={FaCircle} color="teal.500" boxSize={2} mr={2} />
@@ -117,15 +134,24 @@ const BioGroup = () => {
         <Text ml="5">
           <Icon as={FaRegCircle} color="teal.500" boxSize={2} mr={2} />
           <Link
+            href="https://www.apollographql.com/tutorials/certifications/33094c53-1385-430e-9ec1-10649b69a41e"
+            isExternal
+          >
+            GraphQL Associate (Apollo)
+          </Link>
+        </Text>
+        {/* <Text ml="5">
+          <Icon as={FaRegCircle} color="teal.500" boxSize={2} mr={2} />
+          <Link
             href="https://www.freecodecamp.org/certification/utoker/scientific-computing-with-python-v7"
             isExternal
           >
             Scientific Computing with Python
           </Link>
-        </Text>
+        </Text> */}
       </BioSection>
 
-      <BioSection>
+      {/* <BioSection>
         <BioYear>2022</BioYear>
         <Text>
           <Icon as={FaCircle} color="teal.500" boxSize={2} mr={2} />
@@ -146,9 +172,9 @@ const BioGroup = () => {
           </Link>{' '}
           to production.
         </Text>
-      </BioSection>
+      </BioSection> */}
 
-      <BioSection>
+      {/* <BioSection>
         <BioYear>2021</BioYear>
         <Text>
           <Icon as={FaCircle} color="teal.500" boxSize={2} mr={2} />
@@ -161,15 +187,15 @@ const BioGroup = () => {
             freeCodeCamp.
           </Link>
           ).
-        </Text>
-        <Text>
+        </Text> */}
+      {/* <Text>
           <Icon as={FaCircle} color="teal.500" boxSize={2} mr={2} />
           Consultant for smart-home networks; delivered end-to-end
           installations.
-        </Text>
-      </BioSection>
+        </Text> */}
+      {/* </BioSection> */}
 
-      <BioSection>
+      {/* <BioSection>
         <BioYear>2020</BioYear>
         <Text>
           <Icon as={FaCircle} color="teal.500" boxSize={2} mr={2} />
@@ -225,9 +251,9 @@ const BioGroup = () => {
           </Link>
           - reconciled A/P & A/R and month-end reports.
         </Text>
-      </BioSection>
+      </BioSection> */}
 
-      <BioSection>
+      {/* <BioSection>
         <BioYear>2017</BioYear>
         <Text>
           <Icon as={FaCircle} color="teal.500" boxSize={2} mr={2} />
@@ -246,7 +272,7 @@ const BioGroup = () => {
           </Link>{' '}
           - Dota 2 guides attracting 6400 weekly visitors.
         </Text>
-      </BioSection>
+      </BioSection> */}
     </>
   )
 }

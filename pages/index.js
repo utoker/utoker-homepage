@@ -18,7 +18,7 @@ import { IoLogoLinkedin, IoMail, IoLogoGithub } from 'react-icons/io5'
 import Image from 'next/image'
 import { ProjectGridItem } from '../components/grid-item'
 import thumbLinkShortener from '../public/images/projects/link-shortener_eyecatch.png'
-import thumbAlbertSolver from '../public/images/projects/albert-solver_eyecatch.png'
+import thumbColdTrace from '../public/images/projects/coldtrace_eyecatch.png'
 import BioGroup from '../components/bioGroup'
 import TokerImage from '../public/images/Toker.jpg' // Static import
 
@@ -89,20 +89,23 @@ const Home = () => (
         </Heading>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <ProjectGridItem
+            id="coldtrace"
+            title="ColdTrace - Real-time IoT Monitoring Platform"
+            thumbnail={thumbColdTrace}
+          >
+            A real-time IoT monitoring platform built with Next.js, GraphQL
+            Subscriptions, Recharts, and Leaflet. Architected to handle over
+            10,000 updates per second for live temperature tracking, device
+            mapping, and anomaly detection.
+          </ProjectGridItem>
+          <ProjectGridItem
             id="link-shortener"
             title="Reqq Link Shortener"
             thumbnail={thumbLinkShortener}
           >
-            Edge-first URL shortener rebuilt in 2025.. Custom slugs, Supabase
-            RLS, and Vercel Edge Middleware deliver p95 redirects in 32 ms
-          </ProjectGridItem>
-          <ProjectGridItem
-            id="albert-solver"
-            title="Albert Solver"
-            thumbnail={thumbAlbertSolver}
-          >
-            Study companion powered by GPT-4: outlines essays, suggests
-            citations, and exports Markdown notes in one click
+            A high-performance URL shortener built with Next.js Edge Runtime and
+            Redis. Achieves sub-40ms redirect latency and eliminates race
+            conditions with an atomic Postgres click-tracking system.
           </ProjectGridItem>
         </SimpleGrid>
       </Section>
