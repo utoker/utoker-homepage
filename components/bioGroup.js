@@ -13,7 +13,7 @@ const BioGroup = () => {
         <BioYear>2025</BioYear>
         <Text>
           <Icon as={FaCircle} color="teal.500" boxSize={2} mr={2} />
-          Started as a Founding Engineer (Contract) at{' '}
+          Started as a Full-Stack Engineer (Contract) at{' '}
           <Link href="https://www.tracius.com" isExternal>
             Tracius.
           </Link>
