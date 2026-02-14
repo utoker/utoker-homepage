@@ -40,4 +40,3 @@ const ShoppingList = () => (
 )
 
 export default ShoppingList
-export { getServerSideProps } from '../../components/chakra'

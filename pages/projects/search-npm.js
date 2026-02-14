@@ -58,4 +58,3 @@ const SearchNpm = () => (
 )
 
 export default SearchNpm
-export { getServerSideProps } from '../../components/chakra'

@@ -40,4 +40,3 @@ const EtchASketch = () => (
 )
 
 export default EtchASketch
-export { getServerSideProps } from '../../components/chakra'

@@ -48,4 +48,3 @@ const ColdTraceApp = () => (
 )
 
 export default ColdTraceApp
-export { getServerSideProps } from '../../components/chakra'

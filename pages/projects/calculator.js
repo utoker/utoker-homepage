@@ -40,4 +40,3 @@ const Calculator = () => (
 )
 
 export default Calculator
-export { getServerSideProps } from '../../components/chakra'

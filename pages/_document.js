@@ -7,19 +7,16 @@ export default class Document extends NextDocument {
     return (
       <Html lang="en">
         <Head>
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
           <link
-            rel="preconnect"
-            href="https://fonts.googleapis.com"
-          />
-          <link
-            rel="preconnect"
-            href="https://fonts.gstatic.com"
-            crossOrigin=""
+            href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;700&display=swap"
+            rel="stylesheet"
           />
         </Head>
         <body>
           <ColorModeScript initialColorMode={theme.config.initialColorMode} />
-          <Main />  
+          <Main />
           <NextScript />
         </body>
       </Html>

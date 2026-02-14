@@ -42,4 +42,3 @@ const AlbertSolverApp = () => (
 )
 
 export default AlbertSolverApp
-export { getServerSideProps } from '../../components/chakra'

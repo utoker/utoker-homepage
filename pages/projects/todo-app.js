@@ -40,4 +40,3 @@ const TodoApp = () => (
 )
 
 export default TodoApp
-export { getServerSideProps } from '../../components/chakra'

@@ -43,4 +43,3 @@ const MemoryGame = () => (
 )
 
 export default MemoryGame
-export { getServerSideProps } from '../../components/chakra'

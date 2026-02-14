@@ -46,4 +46,3 @@ const FoodCheck = () => (
 )
 
 export default FoodCheck
-export { getServerSideProps } from '../../components/chakra'

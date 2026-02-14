@@ -70,10 +70,12 @@ const Home = () => (
           About
         </Heading>
         <Paragraph>
-          I’m a full-stack engineer turning ideas into production-ready tools.
-          Right now I’m building edge-optimized React 19 / Next 15 apps on
-          Supabase while pursuing an M.S. in Software Engineering at Western
-          Governors University to sharpen my domain-driven-design expertise.
+          Tampa-based Software Engineer specializing in React-based data
+          visualization and resilient frontend architectures. M.S. in Software
+          Engineering with 3+ years building complex, production-grade
+          applications handling 4,500+ real-time events/sec. AWS Certified with
+          enterprise deployment experience at Fortune 500 companies. Strong
+          foundation in Python and agile development practices.
         </Paragraph>
         <Box align="center" my={4}>
           <Link as={NextLink} href="/projects" scroll={false}>
@@ -165,4 +167,3 @@ const Home = () => (
 )
 
 export default Home
-export { getServerSideProps } from '../components/chakra'

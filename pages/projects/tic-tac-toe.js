@@ -40,4 +40,3 @@ const TicTacToe = () => (
 )
 
 export default TicTacToe
-export { getServerSideProps } from '../../components/chakra'

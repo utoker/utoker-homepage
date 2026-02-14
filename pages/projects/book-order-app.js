@@ -40,4 +40,3 @@ const BookOrderApp = () => (
 )
 
 export default BookOrderApp
-export { getServerSideProps } from '../../components/chakra'

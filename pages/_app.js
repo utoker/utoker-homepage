@@ -2,6 +2,7 @@ import Layout from '../components/layouts/main'
 import Fonts from '../components/fonts'
 import { AnimatePresence } from 'framer-motion'
 import Chakra from '../components/chakra'
+import { GridItemStyle } from '../components/grid-item'
 
 if (typeof window !== 'undefined') {
   window.history.scrollRestoration = 'manual'
@@ -9,8 +10,9 @@ if (typeof window !== 'undefined') {
 
 function Website({ Component, pageProps, router }) {
   return (
-    <Chakra cookies={pageProps.cookies}>
+    <Chakra>
       <Fonts />
+      <GridItemStyle />
       <Layout router={router}>
         <AnimatePresence
           mode="wait"

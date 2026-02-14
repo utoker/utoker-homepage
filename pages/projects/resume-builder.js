@@ -43,4 +43,3 @@ const ResumeBuilder = () => (
 )
 
 export default ResumeBuilder
-export { getServerSideProps } from '../../components/chakra'

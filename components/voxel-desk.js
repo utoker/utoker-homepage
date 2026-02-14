@@ -42,7 +42,7 @@ const VoxelDesk = () => {
       })
       rendererRef.current.setPixelRatio(window.devicePixelRatio)
       rendererRef.current.setSize(scW, scH)
-      rendererRef.current.outputEncoding = THREE.sRGBEncoding
+      rendererRef.current.outputColorSpace = THREE.SRGBColorSpace
       rendererRef.current.toneMapping = THREE.ACESFilmicToneMapping
       rendererRef.current.toneMappingExposure = 1.5
       container.appendChild(rendererRef.current.domElement)

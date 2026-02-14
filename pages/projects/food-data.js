@@ -47,4 +47,3 @@ const FoodData = () => (
 )
 
 export default FoodData
-export { getServerSideProps } from '../../components/chakra'

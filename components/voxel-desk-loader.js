@@ -27,6 +27,8 @@ export const DeskContainer = forwardRef(({ children }, ref) => (
   </Box>
 ))
 
+DeskContainer.displayName = 'DeskContainer'
+
 const Loader = () => {
   return (
     <DeskContainer>

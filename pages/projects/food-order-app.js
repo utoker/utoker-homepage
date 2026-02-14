@@ -40,4 +40,3 @@ const FoodOrderApp = () => (
 )
 
 export default FoodOrderApp
-export { getServerSideProps } from '../../components/chakra'
