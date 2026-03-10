@@ -18,6 +18,8 @@ const BioGroup = () => {
             Western Governors University.
           </Link>
         </Text>
+      </BioSection>
+      <BioSection>
         <BioYear>2025</BioYear>
         <Text>
           <Icon as={FaCircle} color="teal.500" boxSize={2} mr={2} />
