@@ -10,10 +10,18 @@ const BioGroup = () => {
         Bio
       </Heading>
       <BioSection>
+        <BioYear>2026</BioYear>
+        <Text>
+          <Icon as={FaCircle} color="teal.500" boxSize={2} mr={2} />
+          Earned an <b>M.S. in Software Engineering</b> from{' '}
+          <Link href="https://www.wgu.edu" isExternal>
+            Western Governors University.
+          </Link>
+        </Text>
         <BioYear>2025</BioYear>
         <Text>
           <Icon as={FaCircle} color="teal.500" boxSize={2} mr={2} />
-          Started as a Full-Stack Engineer (Contract) at{' '}
+          Started as a Full-Stack Engineer at{' '}
           <Link href="https://www.tracius.com" isExternal>
             Tracius.
           </Link>
@@ -58,8 +66,8 @@ const BioGroup = () => {
         </Text>
         <Text>
           <Icon as={FaCircle} color="teal.500" boxSize={2} mr={2} />
-          Started <b>M.S. Software Engineering</b>, Western Governors University
-          (exp. 2026).
+          Started <b>M.S. Software Engineering</b>, Western Governors
+          University.
         </Text>
         {/* <Text>
           <Icon as={FaCircle} color="teal.500" boxSize={2} mr={2} />
