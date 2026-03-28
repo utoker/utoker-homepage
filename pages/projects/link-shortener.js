@@ -5,7 +5,7 @@ import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
 const FoodOrderApp = () => (
-  <Layout title="Reqq Link Shortener">
+  <Layout title="Reqq Link Shortener" description="Edge-first URL shortener with 2ms p95 redirects, custom slugs, and Supabase Row-Level Security.">
     <Container maxW="container.lg">
       <Title>
         Reqq Link Shortener <Badge>2025</Badge>

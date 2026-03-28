@@ -17,13 +17,36 @@ const Main = ({ children, router }) => {
     <Box as="main" pb={8} w="100%">
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Umut's homepage" />
+        <meta
+          name="description"
+          content="Umut Toker - Software Engineer specializing in React, data visualization, and frontend architectures. View projects and experience."
+        />
         <meta name="author" content="Umut Toker" />
+        <link rel="canonical" href={`https://www.utoker.com${router.asPath}`} />
         <link rel="apple-touch-icon" href="apple-touch-icon.png" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <meta property="og:site_name" content="Umut Toker" />
-        <meta name="og:title" content="Umut Toker" />
+        <meta property="og:title" content="Umut Toker - Software Engineer" />
         <meta property="og:type" content="website" />
+        <meta
+          property="og:description"
+          content="Software Engineer specializing in React, data visualization, and frontend architectures. View projects and experience."
+        />
+        <meta property="og:url" content={`https://www.utoker.com${router.asPath}`} />
+        <meta
+          property="og:image"
+          content="https://www.utoker.com/images/Toker.jpg"
+        />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Umut Toker - Software Engineer" />
+        <meta
+          name="twitter:description"
+          content="Software Engineer specializing in React, data visualization, and frontend architectures."
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.utoker.com/images/Toker.jpg"
+        />
         <title>Umut Toker - Homepage</title>
       </Head>
       <NavBar path={router.asPath} />

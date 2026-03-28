@@ -5,7 +5,7 @@ import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
 const ColdTraceApp = () => (
-  <Layout title="Cold Trace">
+  <Layout title="Cold Trace" description="IoT monitoring dashboard for vaccine cold chains with real-time data visualization, GraphQL subscriptions, and simulation engine.">
     <Container maxW="container.lg">
       <Title>
         Cold Trace <Badge>2025</Badge>

@@ -7,7 +7,7 @@ const variants = {
   exit: { opacity: 0, x: -0, y: 20 }
 }
 
-const Layout = ({ children, title }) => {
+const Layout = ({ children, title, description }) => {
   const t = `${title} - Umut Toker`
   return (
     <motion.article
@@ -22,8 +22,17 @@ const Layout = ({ children, title }) => {
         {title && (
           <Head>
             <title>{t}</title>
-            <meta name="twitter:title" content={t} />
             <meta property="og:title" content={t} />
+            {description && (
+              <>
+                <meta name="description" content={description} />
+                <meta property="og:description" content={description} />
+              </>
+            )}
+            <meta name="twitter:title" content={t} />
+            {description && (
+              <meta name="twitter:description" content={description} />
+            )}
           </Head>
         )}
         {children}

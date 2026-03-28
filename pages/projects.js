@@ -9,7 +9,7 @@ import {
 
 const Projects = () => {
   return (
-    <Layout title="Projects">
+    <Layout title="Projects" description="Portfolio of React, React Native, and JavaScript projects by Umut Toker.">
       <Container maxW="container.lg">
         <Heading as="h3" fontSize={20} mb={4}>
           React Projects
