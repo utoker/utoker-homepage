@@ -5,7 +5,7 @@ import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
 const SearchNpm = () => (
-  <Layout title="Search NPM">
+  <Layout title="Search NPM" description="A web app for searching npm packages using the npms.io API, built with React, Redux, and TypeScript.">
     <Container maxW="container.lg">
       <Title>
         Search NPM <Badge>2022</Badge>

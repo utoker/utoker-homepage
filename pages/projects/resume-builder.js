@@ -5,7 +5,7 @@ import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
 const ResumeBuilder = () => (
-  <Layout title="Resume Builder">
+  <Layout title="Resume Builder" description="A React app that lets users create their own resume and save it as a PDF file.">
     <Container maxW="container.lg">
       <Title>
         Resume Builder <Badge>2021</Badge>

@@ -5,7 +5,7 @@ import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
 const BookOrderApp = () => (
-  <Layout title="Book Order App">
+  <Layout title="Book Order App" description="A book ordering application built with React and Redux.">
     <Container maxW="container.lg">
       <Title>
         Book Order App <Badge>2021</Badge>

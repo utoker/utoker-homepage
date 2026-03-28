@@ -61,6 +61,22 @@ const Main = ({ children, router }) => {
           content="https://www.utoker.com/images/Toker.jpg"
         />
         <title>Umut Toker - Homepage</title>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'Person',
+              name: 'Umut Toker',
+              url: 'https://www.utoker.com',
+              jobTitle: 'Software Engineer',
+              sameAs: [
+                'https://github.com/utoker',
+                'https://linkedin.com/in/utoker'
+              ]
+            })
+          }}
+        />
       </Head>
       <NavBar path={router.asPath} />
       <Container maxW="container.lg" px={0} py={0} pt={14}>

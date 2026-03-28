@@ -5,7 +5,7 @@ import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
 const EtchASketch = () => (
-  <Layout title="Etch a Sketch">
+  <Layout title="Etch a Sketch" description="A drawing web app made with plain JavaScript, HTML, and CSS.">
     <Container maxW="container.lg">
       <Title>
         Etch a Sketch <Badge>2021</Badge>

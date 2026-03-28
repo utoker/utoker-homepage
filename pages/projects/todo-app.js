@@ -5,7 +5,7 @@ import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
 const TodoApp = () => (
-  <Layout title="To Do App">
+  <Layout title="To Do App" description="A TypeScript React app for creating to-do lists, built with Next.js.">
     <Container maxW="container.lg">
       <Title>
         To Do App <Badge>2021</Badge>

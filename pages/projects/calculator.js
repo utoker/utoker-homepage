@@ -5,7 +5,7 @@ import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
 const Calculator = () => (
-  <Layout title="Calculator">
+  <Layout title="Calculator" description="A calculator web app made with plain JavaScript, HTML, and CSS.">
     <Container maxW="container.lg">
       <Title>
         Calculator <Badge>2021</Badge>

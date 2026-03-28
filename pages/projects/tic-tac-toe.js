@@ -5,7 +5,7 @@ import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
 const TicTacToe = () => (
-  <Layout title="Tic Tac Toe">
+  <Layout title="Tic Tac Toe" description="A tic tac toe game made with plain JavaScript, HTML, and CSS.">
     <Container maxW="container.lg">
       <Title>
         Tic Tac Toe <Badge>2021</Badge>

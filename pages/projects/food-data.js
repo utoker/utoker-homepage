@@ -5,7 +5,7 @@ import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
 const FoodData = () => (
-  <Layout title="Food Data">
+  <Layout title="Food Data" description="A web app for looking up nutrient profile data from the USDA Food Database, built with Next.js and React.">
     <Container maxW="container.lg">
       <Title>
         Food Data<Badge>2022</Badge>

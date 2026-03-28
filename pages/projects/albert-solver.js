@@ -5,7 +5,7 @@ import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
 const AlbertSolverApp = () => (
-  <Layout title="Albert Solver">
+  <Layout title="Albert Solver" description="AI-powered expert assistance for essays and homework, built with OpenAI's GPT-3, Next.js, Prisma, and Stripe.">
     <Container maxW="container.lg">
       <Title>
         Albert Solver <Badge>2023</Badge>

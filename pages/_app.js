@@ -1,5 +1,4 @@
 import Layout from '../components/layouts/main'
-import Fonts from '../components/fonts'
 import { AnimatePresence } from 'framer-motion'
 import Chakra from '../components/chakra'
 import { GridItemStyle } from '../components/grid-item'
@@ -7,7 +6,6 @@ import { GridItemStyle } from '../components/grid-item'
 function Website({ Component, pageProps, router }) {
   return (
     <Chakra>
-      <Fonts />
       <GridItemStyle />
       <Layout router={router}>
         <AnimatePresence

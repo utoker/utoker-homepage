@@ -5,7 +5,7 @@ import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
 const FoodCheck = () => (
-  <Layout title="Food Check App">
+  <Layout title="Food Check App" description="A barcode grocery scanner app that lets you quickly discover a food's ingredient information, built with React Native.">
     <Container maxW="container.lg">
       <Title>
         Food Check App <Badge>2021</Badge>

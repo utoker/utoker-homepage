@@ -5,7 +5,7 @@ import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
 const MemoryGame = () => (
-  <Layout title="Memory Game">
+  <Layout title="Memory Game" description="A React card memory game where you score points by picking cards you haven't picked before.">
     <Container maxW="container.lg">
       <Title>
         Memory Game <Badge>2021</Badge>
