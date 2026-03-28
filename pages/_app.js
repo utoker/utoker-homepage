@@ -4,10 +4,6 @@ import { AnimatePresence } from 'framer-motion'
 import Chakra from '../components/chakra'
 import { GridItemStyle } from '../components/grid-item'
 
-if (typeof window !== 'undefined') {
-  window.history.scrollRestoration = 'manual'
-}
-
 function Website({ Component, pageProps, router }) {
   return (
     <Chakra>
