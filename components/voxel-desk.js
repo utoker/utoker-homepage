@@ -84,20 +84,25 @@ const VoxelDesk = () => {
           setLoading(false)
         })
 
+      let frameId
       const animate = () => {
-        requestAnimationFrame(animate)
-        controlsRef.current.update()
-        rendererRef.current.render(scene.current, cameraRef.current)
+        frameId = requestAnimationFrame(animate)
+        controlsRef.current?.update()
+        rendererRef.current?.render(scene.current, cameraRef.current)
       }
       animate()
 
-      // Save the scene reference locally to avoid React warnings
       const localScene = scene.current
 
       return () => {
+        cancelAnimationFrame(frameId)
+        rendererRef.current.domElement.remove()
         rendererRef.current.dispose()
+        rendererRef.current = null
         controlsRef.current.dispose()
-        localScene.clear() // Use the saved reference here
+        controlsRef.current = null
+        localScene.clear()
+        scene.current = new THREE.Scene()
       }
     }
   }, [])
