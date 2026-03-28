@@ -5,12 +5,13 @@ import {
   Heading,
   Box,
   Button,
-  List,
-  ListItem,
-  // useColorModeValue,
-  SimpleGrid
+  Text,
+  SimpleGrid,
+  HStack,
+  Divider,
+  useColorModeValue
 } from '@chakra-ui/react'
-import { ChevronRightIcon } from '@chakra-ui/icons'
+import { ChevronRightIcon, DownloadIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
@@ -20,27 +21,17 @@ import { ProjectGridItem } from '../components/grid-item'
 import thumbLinkShortener from '../public/images/projects/link-shortener_eyecatch.png'
 import thumbColdTrace from '../public/images/projects/coldtrace_eyecatch.png'
 import BioGroup from '../components/bioGroup'
-import TokerImage from '../public/images/Toker.jpg' // Static import
+import TokerImage from '../public/images/Toker.jpg'
 
 const Home = () => (
   <Layout>
     <Container maxW="container.lg">
-      {/* <Box
-        borderRadius="lg"
-        mb={6}
-        p={3}
-        textAlign="center"
-        bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
-        css={{ backdropFilter: 'blur(10px)' }}
-      >
-        Hello, I&apos;m a web developer based in New York!
-      </Box> */}
       <Box display="flex" alignItems="center" justifyContent="space-between">
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
             Umut Toker
           </Heading>
-          <p>Software Engineer</p>
+          <p>Fullstack Software Engineer</p>
         </Box>
         <Box flexShrink={0} ml={{ md: 6 }} textAlign="center">
           <Box
@@ -56,10 +47,10 @@ const Home = () => (
             <Image
               src={TokerImage}
               alt="Profile image"
-              width={230} // Static width for Next.js Image
+              width={230}
               height={230}
-              priority // Load the image faster
-              placeholder="blur" // Add blur effect until loaded
+              priority
+              placeholder="blur"
             />
           </Box>
         </Box>
@@ -77,16 +68,35 @@ const Home = () => (
           enterprise deployment experience at Fortune 500 companies. Strong
           foundation in Python and agile development practices.
         </Paragraph>
-        <Box align="center" my={4}>
-          <Link as={NextLink} href="/projects" scroll={false}>
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              My projects
+        <HStack spacing={4} justify="center" my={4}>
+          <Button
+            as="a"
+            href="#projects"
+            rightIcon={<ChevronRightIcon />}
+            colorScheme="teal"
+            onClick={(e) => {
+              e.preventDefault()
+              document
+                .getElementById('projects')
+                ?.scrollIntoView({ behavior: 'smooth' })
+            }}
+          >
+            View My Work
+          </Button>
+          <Link href="/resume.pdf" isExternal>
+            <Button
+              leftIcon={<DownloadIcon />}
+              variant="outline"
+              colorScheme="teal"
+            >
+              Resume
             </Button>
           </Link>
-        </Box>
+        </HStack>
       </Section>
+
       <Section delay={0.2}>
-        <Heading as="h3" fontSize={20} mb={4}>
+        <Heading as="h3" fontSize={20} mb={4} id="projects">
           Latest Projects
         </Heading>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
@@ -110,57 +120,56 @@ const Home = () => (
             conditions with an atomic Postgres click-tracking system.
           </ProjectGridItem>
         </SimpleGrid>
+        <Box align="center" my={4}>
+          <Link as={NextLink} href="/projects" scroll={false}>
+            <Button rightIcon={<ChevronRightIcon />} variant="ghost" colorScheme="teal">
+              See all projects
+            </Button>
+          </Link>
+        </Box>
       </Section>
+
       <Section delay={0.2}>
         <BioGroup />
       </Section>
+
       <Section delay={0.3}>
+        <Divider my={4} />
         <Heading as="h3" variant="section-title">
-          On the web
+          Let&apos;s Work Together
         </Heading>
-        <List>
-          <ListItem>
-            <Link
-              href="https://github.com/utoker"
-              rel="noopener noreferrer"
-              isExternal
-            >
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoLogoGithub />}
-              >
-                github.com/utoker
-              </Button>
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link
-              href="https://linkedin.com/in/utoker/"
-              rel="noopener noreferrer"
-              isExternal
-            >
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoLogoLinkedin />}
-              >
-                linkedin.com/in/utoker
-              </Button>
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link
-              href="mailto:utoker@gmail.com"
-              rel="noopener noreferrer"
-              isExternal
-            >
-              <Button variant="ghost" colorScheme="teal" leftIcon={<IoMail />}>
-                utoker@gmail.com
-              </Button>
-            </Link>
-          </ListItem>
-        </List>
+        <Text
+          mb={6}
+          color={useColorModeValue('gray.600', 'gray.400')}
+        >
+          Interested in working together or have a question? Feel free to reach
+          out.
+        </Text>
+        <HStack spacing={4} justify="center" flexWrap="wrap">
+          <Link href="mailto:utoker@gmail.com" isExternal>
+            <Button leftIcon={<IoMail />} colorScheme="teal">
+              Get in Touch
+            </Button>
+          </Link>
+          <Link
+            href="https://github.com/utoker"
+            rel="noopener noreferrer"
+            isExternal
+          >
+            <Button leftIcon={<IoLogoGithub />} variant="outline" colorScheme="teal">
+              GitHub
+            </Button>
+          </Link>
+          <Link
+            href="https://linkedin.com/in/utoker/"
+            rel="noopener noreferrer"
+            isExternal
+          >
+            <Button leftIcon={<IoLogoLinkedin />} variant="outline" colorScheme="teal">
+              LinkedIn
+            </Button>
+          </Link>
+        </HStack>
       </Section>
     </Container>
   </Layout>
