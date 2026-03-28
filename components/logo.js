@@ -27,7 +27,7 @@ const Logo = () => {
   return (
     <Link href="/" scroll={false}>
       <LogoBox>
-        <Image src={footPrintImg} width={20} height={20} alt="logo" />
+        <Image src={footPrintImg} width={20} height={20} alt="Umut Toker logo" />
         <Text
           color={useColorModeValue('gray.800', 'whiteAlpha.900')}
           fontFamily='M PLUS Rounded 1c", sans-serif'

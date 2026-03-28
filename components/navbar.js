@@ -31,6 +31,7 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
       bg={active ? 'grassTeal' : undefined}
       color={active ? '#202023' : inactiveColor}
       target={target}
+      aria-current={active ? 'page' : undefined}
       {...props}
     >
       {children}
@@ -84,6 +85,7 @@ const Navbar = props => {
             alignItems="center"
             style={{ gap: 4 }}
             pl={2}
+            rel="noopener noreferrer"
           >
             <IoLogoGithub />
             Source

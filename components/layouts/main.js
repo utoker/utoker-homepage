@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
 import NavBar from '../navbar'
-import { Box, Container } from '@chakra-ui/react'
+import { Box, Container, Link } from '@chakra-ui/react'
 import Footer from '../footer'
 import VoxelDeskLoader from '../voxel-desk-loader'
 
@@ -15,6 +15,19 @@ const isHomePage = (path) => path === '/' || path === '/index'
 const Main = ({ children, router }) => {
   return (
     <Box as="main" pb={8} w="100%">
+      <Link
+        href="#main-content"
+        position="absolute"
+        top="-40px"
+        left="0"
+        bg="grassTeal"
+        color="#202023"
+        p={2}
+        zIndex={2}
+        _focus={{ top: '0' }}
+      >
+        Skip to content
+      </Link>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
@@ -52,7 +65,7 @@ const Main = ({ children, router }) => {
       <NavBar path={router.asPath} />
       <Container maxW="container.lg" px={0} py={0} pt={14}>
         {isHomePage(router.asPath) && <LazyVoxelDesk />}
-        {children}
+        <Box id="main-content">{children}</Box>
         <Footer />
       </Container>
     </Box>

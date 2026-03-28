@@ -103,7 +103,7 @@ const VoxelDesk = () => {
   }, [handleWindowResize])
 
   return (
-    <DeskContainer ref={refContainer}>
+    <DeskContainer ref={refContainer} aria-label="3D voxel desk model" role="img">
       {loading && <DeskSpinner />}
     </DeskContainer>
   )
