@@ -12,12 +12,12 @@ const SearchNpm = () => (
       </Title>
       <P>
         A web app for searching node packages with the implementation of{' '}
-        <Link href="https://npms.io/" target="_blank">
+        <Link href="https://npms.io/" isExternal>
           npms.io
         </Link>{' '}
         Rest API. More information about npm search and its API can be found at
         their{' '}
-        <Link href="https://github.com/npms-io" target="_blank">
+        <Link href="https://github.com/npms-io" isExternal>
           GitHub
         </Link>{' '}
         repository.
@@ -29,13 +29,13 @@ const SearchNpm = () => (
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Website</Meta>
-          <Link href="https://search-npm.vercel.app">
+          <Link href="https://search-npm.vercel.app" isExternal>
             https://search-npm.vercel.app <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>
           <Meta>Source</Meta>
-          <Link href="https://github.com/utoker/search-npm">
+          <Link href="https://github.com/utoker/search-npm" isExternal>
             https://github.com/utoker/search-npm
             <ExternalLinkIcon mx="2px" />
           </Link>

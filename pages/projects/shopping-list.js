@@ -14,14 +14,14 @@ const ShoppingList = () => (
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Website</Meta>
-          <Link href="https://utoker.github.io/shopping-list/">
+          <Link href="https://utoker.github.io/shopping-list/" isExternal>
             https://utoker.github.io/shopping-list/
             <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>
           <Meta>Source</Meta>
-          <Link href="https://github.com/utoker/shopping-list">
+          <Link href="https://github.com/utoker/shopping-list" isExternal>
             https://github.com/utoker/shopping-list
             <ExternalLinkIcon mx="2px" />
           </Link>

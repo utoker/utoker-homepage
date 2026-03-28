@@ -17,14 +17,14 @@ const ResumeBuilder = () => (
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Website</Meta>
-          <Link href="https://utoker.github.io/resume-builder/">
+          <Link href="https://utoker.github.io/resume-builder/" isExternal>
             https://utoker.github.io/resume-builder/
             <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>
           <Meta>Source</Meta>
-          <Link href="https://github.com/utoker/resume-builder">
+          <Link href="https://github.com/utoker/resume-builder" isExternal>
             https://github.com/utoker/resume-builder
             <ExternalLinkIcon mx="2px" />
           </Link>

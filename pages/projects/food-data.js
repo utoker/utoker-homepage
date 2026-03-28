@@ -13,7 +13,7 @@ const FoodData = () => (
       <P>
         Food Data is a web app for getting nutrient profile data of requested
         food from{' '}
-        <Link href="https://fdc.nal.usda.gov/" target="_blank">
+        <Link href="https://fdc.nal.usda.gov/" isExternal>
           USDA Food Database
         </Link>{' '}
         with Rest API.
@@ -25,13 +25,13 @@ const FoodData = () => (
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Website</Meta>
-          <Link href="https://food-data-app.vercel.app/">
+          <Link href="https://food-data-app.vercel.app/" isExternal>
             https://food-data-app.vercel.app/ <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>
           <Meta>Source</Meta>
-          <Link href="https://github.com/utoker/food-data">
+          <Link href="https://github.com/utoker/food-data" isExternal>
             https://github.com/utoker/food-data
             <ExternalLinkIcon mx="2px" />
           </Link>

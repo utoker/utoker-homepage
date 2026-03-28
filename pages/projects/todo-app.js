@@ -14,14 +14,14 @@ const TodoApp = () => (
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Website</Meta>
-          <Link href="https://todo-app-utoker.vercel.app/">
+          <Link href="https://todo-app-utoker.vercel.app/" isExternal>
             https://todo-app-utoker.vercel.app/
             <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>
           <Meta>Source</Meta>
-          <Link href="https://github.com/utoker/todo-app">
+          <Link href="https://github.com/utoker/todo-app" isExternal>
             https://github.com/utoker/todo-app
             <ExternalLinkIcon mx="2px" />
           </Link>

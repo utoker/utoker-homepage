@@ -17,14 +17,14 @@ const MemoryGame = () => (
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Website</Meta>
-          <Link href="https://utoker.github.io/memory-game/">
+          <Link href="https://utoker.github.io/memory-game/" isExternal>
             https://utoker.github.io/memory-game/
             <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>
           <Meta>Source</Meta>
-          <Link href="https://github.com/utoker/memory-game">
+          <Link href="https://github.com/utoker/memory-game" isExternal>
             https://github.com/utoker/memory-game
             <ExternalLinkIcon mx="2px" />
           </Link>

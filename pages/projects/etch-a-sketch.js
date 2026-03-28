@@ -14,14 +14,14 @@ const EtchASketch = () => (
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Website</Meta>
-          <Link href="https://utoker.github.io/etch-a-sketch/">
+          <Link href="https://utoker.github.io/etch-a-sketch/" isExternal>
             https://utoker.github.io/etch-a-sketch/
             <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>
           <Meta>Source</Meta>
-          <Link href="https://github.com/utoker/etch-a-sketch">
+          <Link href="https://github.com/utoker/etch-a-sketch" isExternal>
             https://github.com/utoker/etch-a-sketch
             <ExternalLinkIcon mx="2px" />
           </Link>

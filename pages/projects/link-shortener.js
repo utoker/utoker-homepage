@@ -38,14 +38,14 @@ const FoodOrderApp = () => (
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Website</Meta>
-          <Link href="https://www.reqq.cc">
+          <Link href="https://www.reqq.cc" isExternal>
             https://www.reqq.cc
             <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>
           <Meta>Source</Meta>
-          <Link href="https://github.com/utoker/link-shortener">
+          <Link href="https://github.com/utoker/link-shortener" isExternal>
             https://github.com/utoker/link-shortener
             <ExternalLinkIcon mx="2px" />
           </Link>

@@ -77,7 +77,12 @@ const VoxelDesk = () => {
       loadGLTFModel(scene.current, '/desk.glb', {
         receiveShadow: false,
         castShadow: false
-      }).then(() => setLoading(false))
+      })
+        .then(() => setLoading(false))
+        .catch((e) => {
+          console.error('Failed to load 3D model:', e)
+          setLoading(false)
+        })
 
       const animate = () => {
         requestAnimationFrame(animate)

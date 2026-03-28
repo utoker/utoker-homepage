@@ -19,14 +19,14 @@ const AlbertSolverApp = () => (
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Website</Meta>
-          <Link href="https://www.albertsolver.com">
+          <Link href="https://www.albertsolver.com" isExternal>
             https://www.albertsolver.com
             <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>
           <Meta>Source</Meta>
-          <Link href="https://github.com/utoker/albert-solver">
+          <Link href="https://github.com/utoker/albert-solver" isExternal>
             https://github.com/utoker/albert-solver
             <ExternalLinkIcon mx="2px" />
           </Link>

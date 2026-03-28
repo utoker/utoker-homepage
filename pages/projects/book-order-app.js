@@ -14,14 +14,14 @@ const BookOrderApp = () => (
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Website</Meta>
-          <Link href="https://book-order-app.vercel.app/">
+          <Link href="https://book-order-app.vercel.app/" isExternal>
             https://book-order-app.vercel.app/
             <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>
           <Meta>Source</Meta>
-          <Link href="https://github.com/utoker/book-order-app">
+          <Link href="https://github.com/utoker/book-order-app" isExternal>
             https://github.com/utoker/book-order-app
             <ExternalLinkIcon mx="2px" />
           </Link>

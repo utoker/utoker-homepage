@@ -14,14 +14,14 @@ const TicTacToe = () => (
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Website</Meta>
-          <Link href="https://utoker.github.io/tic-tac-toe/">
+          <Link href="https://utoker.github.io/tic-tac-toe/" isExternal>
             https://utoker.github.io/tic-tac-toe/
             <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>
           <Meta>Source</Meta>
-          <Link href="https://github.com/utoker/tic-tac-toe">
+          <Link href="https://github.com/utoker/tic-tac-toe" isExternal>
             https://github.com/utoker/tic-tac-toe
             <ExternalLinkIcon mx="2px" />
           </Link>

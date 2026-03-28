@@ -19,14 +19,14 @@ const ColdTraceApp = () => (
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Website</Meta>
-          <Link href="https://www.coldtrace.app">
+          <Link href="https://www.coldtrace.app" isExternal>
             https://www.coldtrace.app
             <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>
           <Meta>Source</Meta>
-          <Link href="https://github.com/utoker/coldtrace">
+          <Link href="https://github.com/utoker/coldtrace" isExternal>
             https://github.com/utoker/coldtrace
             <ExternalLinkIcon mx="2px" />
           </Link>
