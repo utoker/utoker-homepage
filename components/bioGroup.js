@@ -32,7 +32,7 @@ const BioGroup = () => {
       </BioSection>
       <BioSection>
         <BioYear>2023</BioYear>
-        Software Engineer at{' '}
+        Technical Specialist at{' '}
         <Link href="https://www.advanco.com" isExternal>
           Advanco SA.
         </Link>{' '}
