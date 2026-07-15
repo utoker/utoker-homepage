@@ -5,15 +5,16 @@ import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
 const ColdTraceApp = () => (
-  <Layout title="Cold Trace" description="IoT monitoring dashboard for vaccine cold chains with real-time data visualization, GraphQL subscriptions, and simulation engine.">
+  <Layout title="Cold Trace" description="IoT monitoring dashboard for vaccine cold chains with real-time data over WebSockets and Redis PubSub, Recharts visualization, and a simulation engine.">
     <Container maxW="container.lg">
       <Title>
         Cold Trace <Badge>2025</Badge>
       </Title>
       <P>
-        IoT monitoring dashboard for vaccine cold chains. Features real-time
-        data visualization (Recharts), GraphQL subscriptions, and a
-        high-fidelity simulation engine.
+        IoT monitoring dashboard for vaccine cold chains. Delivers 4,500+
+        messages/sec to concurrent clients with sub-350ms p95 latency over
+        WebSockets and Redis PubSub, with Recharts visualizing 100K+ data
+        points and a Node.js simulation engine generating synthetic sensor data.
       </P>
       <P> </P>
       <List ml={4} my={4}>
@@ -34,8 +35,7 @@ const ColdTraceApp = () => (
         <ListItem>
           <Meta>Built with</Meta>
           <span>
-            Next.js 15 / TypeScript / GraphQL / Recharts / Zustand / Turborepo /
-            shadcn ui
+            React / Redux / Node.js / WebSockets / Redis / Recharts
           </span>
         </ListItem>
       </List>

@@ -32,18 +32,18 @@ const Main = ({ children, router }) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="description"
-          content="Umut Toker - Software Engineer specializing in React, data visualization, and frontend architectures. View projects and experience."
+          content="Umut Toker - Full-Stack Software Engineer specializing in React, data visualization, and frontend architectures. View projects and experience."
         />
         <meta name="author" content="Umut Toker" />
         <link rel="canonical" href={`https://www.utoker.com${router.asPath}`} />
         <link rel="apple-touch-icon" href="apple-touch-icon.png" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <meta property="og:site_name" content="Umut Toker" />
-        <meta property="og:title" content="Umut Toker - Software Engineer" />
+        <meta property="og:title" content="Umut Toker - Full-Stack Software Engineer" />
         <meta property="og:type" content="website" />
         <meta
           property="og:description"
-          content="Software Engineer specializing in React, data visualization, and frontend architectures. View projects and experience."
+          content="Full-Stack Software Engineer specializing in React, data visualization, and frontend architectures. View projects and experience."
         />
         <meta property="og:url" content={`https://www.utoker.com${router.asPath}`} />
         <meta
@@ -51,10 +51,10 @@ const Main = ({ children, router }) => {
           content="https://www.utoker.com/images/Toker.jpg"
         />
         <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content="Umut Toker - Software Engineer" />
+        <meta name="twitter:title" content="Umut Toker - Full-Stack Software Engineer" />
         <meta
           name="twitter:description"
-          content="Software Engineer specializing in React, data visualization, and frontend architectures."
+          content="Full-Stack Software Engineer specializing in React, data visualization, and frontend architectures."
         />
         <meta
           name="twitter:image"
@@ -69,7 +69,7 @@ const Main = ({ children, router }) => {
               '@type': 'Person',
               name: 'Umut Toker',
               url: 'https://www.utoker.com',
-              jobTitle: 'Software Engineer',
+              jobTitle: 'Full-Stack Software Engineer',
               sameAs: [
                 'https://github.com/utoker',
                 'https://linkedin.com/in/utoker'

@@ -9,6 +9,16 @@ const BioGroup = () => {
       </Heading>
       <BioSection>
         <BioYear>2026</BioYear>
+        Technical Specialist (Contract) at{' '}
+        <Link href="https://www.advanco.com" isExternal>
+          Advanco SA.
+        </Link>{' '}
+        Provide ongoing Level 2 support and implementation for GxP-regulated
+        MES/LES deployments — installations, version upgrades, and IQ/OQ/PQ
+        qualification — for enterprise pharmaceutical clients.
+      </BioSection>
+      <BioSection>
+        <BioYear>2026</BioYear>
         Earned an <b>M.S. in Software Engineering</b> from{' '}
         <Link href="https://www.wgu.edu" isExternal>
           Western Governors University.
@@ -16,7 +26,7 @@ const BioGroup = () => {
       </BioSection>
       <BioSection>
         <BioYear>2025</BioYear>
-        Fullstack Engineer at{' '}
+        Full-Stack Engineer at{' '}
         <Link href="https://www.tracius.com" isExternal>
           Tracius.
         </Link>{' '}
@@ -36,12 +46,13 @@ const BioGroup = () => {
         <Link href="https://www.advanco.com" isExternal>
           Advanco SA.
         </Link>{' '}
-        Deployed as Subject Matter Expert to Thermo Fisher Scientific (Fortune
-        500) in Italy for GxP-regulated implementations.
+        Over ~2 years, deployed and validated GxP-regulated MES/LES systems,
+        including onsite work as Subject Matter Expert at Thermo Fisher
+        Scientific (Fortune 500) in Italy.
       </BioSection>
       <BioSection>
         <BioYear>2023</BioYear>
-        Software Engineering Intern at{' '}
+        Software Engineer (Volunteer) at{' '}
         <Link href="https://www.thecitytutors.org" isExternal>
           The City Tutors.
         </Link>{' '}
@@ -61,6 +72,11 @@ const BioGroup = () => {
           Azure Fundamentals
         </Link>{' '}
         certifications.
+      </BioSection>
+      <BioSection>
+        <BioYear>2019</BioYear>
+        Earned a <b>B.A. in Business Administration</b> from Eskisehir Osmangazi
+        University.
       </BioSection>
     </>
   )

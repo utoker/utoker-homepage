@@ -31,7 +31,7 @@ const Home = () => (
           <Heading as="h2" variant="page-title">
             Umut Toker
           </Heading>
-          <p>Fullstack Software Engineer</p>
+          <p>Full-Stack Software Engineer</p>
         </Box>
         <Box flexShrink={0} ml={{ md: 6 }} textAlign="center">
           <Box
@@ -61,8 +61,8 @@ const Home = () => (
           About
         </Heading>
         <Paragraph>
-          Tampa-based Software Engineer specializing in React-based data
-          visualization and resilient frontend architectures. M.S. in Software
+          Tampa-based Full-Stack Software Engineer specializing in React-based
+          data visualization and resilient frontend architectures. M.S. in Software
           Engineering with 3+ years building complex, production-grade
           applications handling 4,500+ real-time events/sec. AWS Certified with
           enterprise deployment experience at Fortune 500 companies. Strong
@@ -105,10 +105,10 @@ const Home = () => (
             title="ColdTrace - Real-time IoT Monitoring Platform"
             thumbnail={thumbColdTrace}
           >
-            A real-time IoT monitoring platform built with Next.js, GraphQL
-            Subscriptions, Recharts, and Leaflet. Architected to handle over
-            10,000 updates per second for live temperature tracking, device
-            mapping, and anomaly detection.
+            A real-time IoT monitoring platform built with React, Redux,
+            Node.js, WebSockets, Redis, and Recharts. Delivers 4,500+
+            messages/sec to concurrent clients with sub-350ms p95 latency for
+            live temperature tracking and anomaly detection.
           </ProjectGridItem>
           <ProjectGridItem
             id="link-shortener"
