@@ -14,8 +14,9 @@ const BioGroup = () => {
           Advanco SA.
         </Link>{' '}
         Provide ongoing Level 2 support and implementation for GxP-regulated
-        MES/LES deployments — installations, version upgrades, and IQ/OQ/PQ
-        qualification — for enterprise pharmaceutical clients.
+        MES/LES deployments, including installations, version upgrades, IQ/OQ
+        qualification protocols, and site acceptance testing (SAT), for
+        enterprise pharmaceutical clients.
       </BioSection>
       <BioSection>
         <BioYear>2026</BioYear>
@@ -26,12 +27,13 @@ const BioGroup = () => {
       </BioSection>
       <BioSection>
         <BioYear>2025</BioYear>
-        Full-Stack Engineer at{' '}
+        Full-Stack Engineer (Contract) at{' '}
         <Link href="https://www.tracius.com" isExternal>
           Tracius.
         </Link>{' '}
-        Architected a multi-tenant, GS1-compliant traceability platform using a
-        Turborepo monorepo for end-to-end supply chain visibility. Earned{' '}
+        As the sole engineer, built a multi-tenant, GS1-conformant traceability
+        platform 0-to-1 in a Turborepo monorepo, delivered as a demo-ready MVP
+        for investor demonstrations. Earned{' '}
         <Link
           href="https://www.apollographql.com/tutorials/certifications/33094c53-1385-430e-9ec1-10649b69a41e"
           isExternal
@@ -47,8 +49,9 @@ const BioGroup = () => {
           Advanco SA.
         </Link>{' '}
         Over ~2 years, deployed and validated GxP-regulated MES/LES systems,
-        including onsite work as Subject Matter Expert at Thermo Fisher
-        Scientific (Fortune 500) in Italy.
+        including an onsite connector implementation and go-live at Thermo
+        Fisher Scientific (Fortune 500) in Italy as the sole Advanco
+        representative.
       </BioSection>
       <BioSection>
         <BioYear>2023</BioYear>

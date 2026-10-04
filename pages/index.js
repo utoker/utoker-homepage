@@ -61,12 +61,14 @@ const Home = () => (
           About
         </Heading>
         <Paragraph>
-          Tampa-based Full-Stack Software Engineer specializing in React-based
-          data visualization and resilient frontend architectures. M.S. in Software
-          Engineering with 3+ years building complex, production-grade
-          applications handling 4,500+ real-time events/sec. AWS Certified with
-          enterprise deployment experience at Fortune 500 companies. Strong
-          foundation in Python and agile development practices.
+          Tampa-based software engineer working across TypeScript and Python,
+          with an M.S. in Software Engineering (Python-focused coursework). On
+          contract as the sole engineer at an early-stage pharma SaaS startup, I
+          built its multi-tenant platform 0-to-1 as an investor-demo MVP. My
+          projects include real-time streaming at 4,500+ messages/sec and
+          Python/FastAPI services. I also bring 2+ years of enterprise deployment
+          experience in GxP-regulated pharma, including onsite go-live work at a
+          Fortune 500 company. AWS and Azure certified.
         </Paragraph>
         <HStack spacing={4} justify="center" my={4}>
           <Button
@@ -105,8 +107,8 @@ const Home = () => (
             title="ColdTrace - Real-time IoT Monitoring Platform"
             thumbnail={thumbColdTrace}
           >
-            A real-time IoT monitoring platform built with React, Redux,
-            Node.js, WebSockets, Redis, and Recharts. Delivers 4,500+
+            A real-time IoT monitoring platform built with Next.js, GraphQL
+            subscriptions, Node.js, Redis, Zustand, and Recharts. Delivers 4,500+
             messages/sec to concurrent clients with sub-350ms p95 latency for
             live temperature tracking and anomaly detection.
           </ProjectGridItem>

@@ -32,7 +32,7 @@ const Main = ({ children, router }) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="description"
-          content="Umut Toker - Full-Stack Software Engineer specializing in React, data visualization, and frontend architectures. View projects and experience."
+          content="Umut Toker - Software engineer working across TypeScript and Python, with an M.S. in Software Engineering. View projects and experience."
         />
         <meta name="author" content="Umut Toker" />
         <link rel="canonical" href={`https://www.utoker.com${router.asPath}`} />
@@ -43,7 +43,7 @@ const Main = ({ children, router }) => {
         <meta property="og:type" content="website" />
         <meta
           property="og:description"
-          content="Full-Stack Software Engineer specializing in React, data visualization, and frontend architectures. View projects and experience."
+          content="Software engineer working across TypeScript and Python, with an M.S. in Software Engineering. View projects and experience."
         />
         <meta property="og:url" content={`https://www.utoker.com${router.asPath}`} />
         <meta
@@ -54,7 +54,7 @@ const Main = ({ children, router }) => {
         <meta name="twitter:title" content="Umut Toker - Full-Stack Software Engineer" />
         <meta
           name="twitter:description"
-          content="Full-Stack Software Engineer specializing in React, data visualization, and frontend architectures."
+          content="Software engineer working across TypeScript and Python, with an M.S. in Software Engineering."
         />
         <meta
           name="twitter:image"

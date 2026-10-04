@@ -35,7 +35,7 @@ const ColdTraceApp = () => (
         <ListItem>
           <Meta>Built with</Meta>
           <span>
-            React / Redux / Node.js / WebSockets / Redis / Recharts
+            Next.js / React / GraphQL Subscriptions / Node.js / Redis / Zustand / Recharts
           </span>
         </ListItem>
       </List>
