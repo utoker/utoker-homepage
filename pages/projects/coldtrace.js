@@ -19,11 +19,8 @@ const ColdTraceApp = () => (
       <P> </P>
       <List ml={4} my={4}>
         <ListItem>
-          <Meta>Website</Meta>
-          <Link href="https://www.coldtrace.app" isExternal>
-            https://www.coldtrace.app
-            <ExternalLinkIcon mx="2px" />
-          </Link>
+          <Meta>Status</Meta>
+          <span>Archived. The live site is retired, so the video below shows it running.</span>
         </ListItem>
         <ListItem>
           <Meta>Source</Meta>
