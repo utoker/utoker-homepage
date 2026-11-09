@@ -1,6 +1,6 @@
 import { Container, Badge, Link, List, ListItem } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { Title, ProjectImage, Meta } from '../../components/project'
+import { Title, ProjectImage, ProjectVideo, Meta } from '../../components/project'
 import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
@@ -39,6 +39,11 @@ const ColdTraceApp = () => (
           </span>
         </ListItem>
       </List>
+      <ProjectVideo
+        src="/videos/coldtrace-demo.mp4"
+        poster="/images/projects/coldtrace_demo_poster.jpg"
+        label="ColdTrace demo: live device readings, a temperature excursion, alerts, and analytics"
+      />
       <ProjectImage
         src="/images/projects/coldtrace_eyecatch.png"
         alt="ColdTrace - Real-time IoT Monitoring Platform"

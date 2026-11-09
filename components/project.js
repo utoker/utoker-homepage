@@ -28,6 +28,23 @@ export const ProjectImage = ({
   </Box>
 )
 
+export const ProjectVideo = ({ src, poster, label }) => (
+  <Box
+    as="video"
+    controls
+    playsInline
+    preload="none"
+    poster={poster}
+    aria-label={label}
+    w="100%"
+    borderRadius="lg"
+    mb={4}
+    style={{ aspectRatio: '16 / 9' }}
+  >
+    <source src={src} type="video/mp4" />
+  </Box>
+)
+
 export const Meta = ({ children }) => (
   <Badge colorScheme="green" mr={2}>
     {children}
