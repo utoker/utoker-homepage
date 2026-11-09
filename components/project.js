@@ -23,7 +23,7 @@ export const ProjectImage = ({
   width = '480px',
   height = 'auto'
 }) => (
-  <Box w={width} mx="auto">
+  <Box w={width} maxW="100%" mx="auto">
     <Image borderRadius="lg" w="100%" h={height} src={src} alt={alt} mb={4} />
   </Box>
 )
